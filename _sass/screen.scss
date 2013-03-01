@@ -1,7 +1,9 @@
 $linkColor: #9BC4CE;
 $baseFontSize: 16px;
-$gridColumnWidth: 40px;
-$gridColumnWidth1200: 40px;
+$gridColumnWidth: 50px;
+$gridColumnWidth1200: 50px;
+$gridGutterWidth1200: 10px;
+$gridGutterWidth1200: 10px;
 
 @import "mixins/syntax";
 @import "bootstrap";
