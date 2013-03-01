@@ -1,5 +1,8 @@
 $linkColor: #9BC4CE;
-$baseFontSize: 12px;
+$baseFontSize: 16px;
+$gridColumnWidth: 40px;
+$gridColumnWidth1200: 40px;
+
 @import "mixins/syntax";
 @import "bootstrap";
 @import "bootstrap-responsive";

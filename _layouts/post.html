@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% if page.date %}<div class="postdate">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</div>{% endif %}
+{% if page.date %}<span class="muted">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</span>{% endif %}
 
 <div class="post">
 {{ content }}

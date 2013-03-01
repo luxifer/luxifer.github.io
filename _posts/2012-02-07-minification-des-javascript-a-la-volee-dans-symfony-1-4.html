@@ -43,7 +43,9 @@ Le dernier point à aborder, c'est la mise a jour de ces javascripts minifiés. 
 Pour le code, voici les différents fichier :
 Tout d'abord le <em>AssetHelper.php</em>
 
-<pre lang="php">function get_javascripts()
+{% highlight php %}
+<?php 
+function get_javascripts()
 {
   $response = sfContext::getInstance()->getResponse();
   $host = sfContext::getInstance()->getRequest()->getHost();
@@ -81,11 +83,14 @@ Tout d'abord le <em>AssetHelper.php</em>
   }
 
   return $html;
-}</pre>
+}
+?>
+{% endhighlight %}
 
 Ensuite la tâche de minification <em>genMinifiedJs.php</em> à placer à la racine du répertoire lib du projet symfony
 
-<pre lang="php">#!/usr/bin/env php
+{% highlight php %}
+#!/usr/bin/env php
 <?php
 
 if ($argc) {
@@ -118,7 +123,9 @@ if ($argc) {
   else {
     die; //Une instance existe déja, on quitte le navire
   }
-}</pre>
+}
+?>
+{% endhighlight %}
 
 Et voilà, maintenant, à chaque page un seule javascript sera chargé et une fois qu'il sera mis en cache par le navigateur, le temps de chargement du site sera bien réduit.
 
