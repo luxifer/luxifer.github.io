@@ -49,7 +49,7 @@ Cette commande va créer un fichier <em>Capfile</em> à la racine de votre proje
 
 Ensuite il faut configurer le fichier deploy.rb afin de spécifier tous les paramètres nécessaires au déploiement.
 
-<pre lang="ruby">set :application, "" # nom de l'application
+{% highlight ruby %}
 set :domain, "" # adresse du serveur de production
 set :deploy_to, "" # répertoire ou déployer
 set :app_path, "app"
@@ -68,7 +68,8 @@ role :db, domain, :primary => true # This is where Rails migrations will run
 
 set :use_sudo, false
 set :use_composer, false
-set :keep_releases, 3</pre>
+set :keep_releases, 3
+{% endhighlight %}
 
 Il est possible de définit une option en plus si l'utilisateur sur le serveur de production est différent de celui de la machine locale :
 
