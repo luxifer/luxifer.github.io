@@ -33,7 +33,7 @@ meta:
 ---
 Bonjour à tous!
 
-Aujourd'hui j'ai voulu tester <a href="http://capifony.org/" target="_blank">capifony</a>. C'est un petit programme basé sur <a href="https://github.com/capistrano/capistrano" target="_blank">capistrano</a> qui permet de déployer facilement un projet symfony 1.4 ou 2 sur un serveur de production. Ce programme permet de gérer les releases de votre projet, de faire des rollback, de revenir sur unr version anciennement déployée, etc. Il est écrit en ruby par un développeur de l'agence web <a href="http://knplabs.fr/" target="_blank">KnpLabs</a>.
+Aujourd'hui j'ai voulu tester [capifony](http://capifony.org/). C'est un petit programme basé sur <a href="https://github.com/capistrano/capistrano" target="_blank">capistrano</a> qui permet de déployer facilement un projet symfony 1.4 ou 2 sur un serveur de production. Ce programme permet de gérer les releases de votre projet, de faire des rollback, de revenir sur unr version anciennement déployée, etc. Il est écrit en ruby par un développeur de l'agence web <a href="http://knplabs.fr/" target="_blank">KnpLabs</a>.
 
 Tout d'abord il faut installer la gem ruby :
 
@@ -53,7 +53,7 @@ Cette commande va créer un fichier <em>Capfile</em> à la racine de votre proje
 
 Ensuite il faut configurer le fichier deploy.rb afin de spécifier tous les paramètres nécessaires au déploiement.
 
-{% highlight ruby %}
+{% highlight ruby linenos=table %}
 set :domain, "" # adresse du serveur de production
 set :deploy_to, "" # répertoire ou déployer
 set :app_path, "app"

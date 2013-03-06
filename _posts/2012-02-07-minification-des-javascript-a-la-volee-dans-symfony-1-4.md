@@ -43,7 +43,7 @@ Le dernier point à aborder, c'est la mise a jour de ces javascripts minifiés. 
 Pour le code, voici les différents fichier :
 Tout d'abord le <em>AssetHelper.php</em>
 
-{% highlight php %}
+{% highlight php linenos=table %}
 <?php 
 function get_javascripts()
 {
