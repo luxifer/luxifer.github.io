@@ -1,7 +1,7 @@
 # standard jekyll configuration
 
 permalink: date
-exclude: ['Rakefile', 'README.md', 'config.rb']
+exclude: ['Rakefile', 'config.rb']
 markdown: maruku
 pygments: true
 
@@ -20,8 +20,8 @@ email: florent.viel69@gmail.com
 # google_analytics:
 #   account: UA-XXXXX-X
 
-# github:
-#   username: ghusername
+github:
+  username: luxifer
 
 # disqus:
 #   id: disqusid
