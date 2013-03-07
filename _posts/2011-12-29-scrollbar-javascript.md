@@ -36,7 +36,7 @@ Tout d'abord, j'ai une petite annonce à faire. Je profite de l'introduction de 
 
 Dans ce billet je vais parler d'une découverte que j'ai fait hier, c'est un plugin jQuery qui permet de mettre des scrollbar sur ses blocs html. Ce qui permet de pouvoir mieux intégrer cette barre de navigation plutôt que d'utiliser la propriété CSS `overflow`.
 
-Je plugin permet de personnaliser plutôt bien ses scrollbar, en définissant des effets de défilement, une vitesse, positionner ses boutons, etc. Plus plugin se base sur l'id des éléments, ce qui nous permet de personnaliser le squelette de nos boîtes. Il est disponible à l'adresse suivante : <a title="http://manos.malihu.gr/jquery-custom-content-scroller" href="http://manos.malihu.gr/jquery-custom-content-scroller">http://manos.malihu.gr/jquery-custom-content-scroller</a>
+Je plugin permet de personnaliser plutôt bien ses scrollbar, en définissant des effets de défilement, une vitesse, positionner ses boutons, etc. Plus plugin se base sur l'id des éléments, ce qui nous permet de personnaliser le squelette de nos boîtes. Il est disponible à l'adresse suivante : [http://manos.malihu.gr/jquery-custom-content-scroller](http://manos.malihu.gr/jquery-custom-content-scroller "http://manos.malihu.gr/jquery-custom-content-scroller")
 
 Je ne vais pas m'étendre plus que ça sur comment utiliser le plugin, c'est très bien détaillé dans le site que je viens de lier.
 

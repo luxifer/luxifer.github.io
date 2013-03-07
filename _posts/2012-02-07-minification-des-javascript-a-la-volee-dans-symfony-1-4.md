@@ -129,6 +129,6 @@ if ($argc) {
 
 Et voilà, maintenant, à chaque page un seule javascript sera chargé et une fois qu'il sera mis en cache par le navigateur, le temps de chargement du site sera bien réduit.
 
-Dernier point technique, j'ai utilisé l'API REST <a href="http://code.google.com/closure/compiler/">Google Closure Compiler</a> pour minifier mes javascripts. Je vous laisse voir la <a href="http://code.google.com/closure/compiler/docs/api-ref.html">documentation</a> pour modifier les paramètres a envoyer. Il y a aussi la possibilité de télécharger le compiler en java et d'utiliser celui-ci pour la génération, mais pour des questions techniques et pour alléger le serveur je préfère faire une requête externe plutôt que de charger du java...
+Dernier point technique, j'ai utilisé l'API REST [Google Closure Compiler](http://code.google.com/closure/compiler/) pour minifier mes javascripts. Je vous laisse voir la [documentation](http://code.google.com/closure/compiler/docs/api-ref.html) pour modifier les paramètres a envoyer. Il y a aussi la possibilité de télécharger le compiler en java et d'utiliser celui-ci pour la génération, mais pour des questions techniques et pour alléger le serveur je préfère faire une requête externe plutôt que de charger du java...
 
 Faites en bon usage !!

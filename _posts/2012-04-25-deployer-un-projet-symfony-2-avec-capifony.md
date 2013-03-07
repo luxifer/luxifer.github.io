@@ -33,7 +33,7 @@ meta:
 ---
 Bonjour à tous!
 
-Aujourd'hui j'ai voulu tester [capifony](http://capifony.org/). C'est un petit programme basé sur <a href="https://github.com/capistrano/capistrano" target="_blank">capistrano</a> qui permet de déployer facilement un projet symfony 1.4 ou 2 sur un serveur de production. Ce programme permet de gérer les releases de votre projet, de faire des rollback, de revenir sur unr version anciennement déployée, etc. Il est écrit en ruby par un développeur de l'agence web <a href="http://knplabs.fr/" target="_blank">KnpLabs</a>.
+Aujourd'hui j'ai voulu tester [capifony](http://capifony.org/). C'est un petit programme basé sur [capistrano](https://github.com/capistrano/capistrano) qui permet de déployer facilement un projet symfony 1.4 ou 2 sur un serveur de production. Ce programme permet de gérer les releases de votre projet, de faire des rollback, de revenir sur unr version anciennement déployée, etc. Il est écrit en ruby par un développeur de l'agence web [KnpLabs](http://knplabs.fr/).
 
 Tout d'abord il faut installer la gem ruby :
 
@@ -119,6 +119,6 @@ cap deploy
 Cette commande va créer un nouveau dossier dans `/path/to/project/releases` et faire pointer le dossier `current/` vers cette dernière release. Ensuite installer les vendors si c'est un projet Symfony 2, publier les assets, vider le cache et lancer tous les hooks lié au scm.
 
 Une fois les projet déployé, il suffit juste de faire pointer son domaine vers le dossier `current/` du projet.
-Pour les autres commandes disponibles je vous laisse vous référer à la page de <a href="http://capifony.org/" target="_blank">capifony</a>.
+Pour les autres commandes disponibles je vous laisse vous référer à la page de [capifony](http://capifony.org/).
 
 Bon déploiement !

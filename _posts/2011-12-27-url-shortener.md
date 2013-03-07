@@ -32,17 +32,17 @@ Salut à tous,
 
 Voulant me remettre petit à petit dans le framework django de python, je me suis dit que j'allais développer un petit projet. C'est la que j'ai eu l'idée de créer mon propre raccourciceur d'URL. Pourquoi faire me diriez vous? Tout simplement pour la performance, je sais très bien que sur le web ce n'est pas ce qui manque comme service, mais j'avais envie d'essayer.
 
-Le code source du projet est sous licence GPL V3 et est disponible sur github : <a href="https://github.com/LuXiFeR/UrliZr">https://github.com/LuXiFeR/UrliZr</a>
+Le code source du projet est sous licence GPL V3 et est disponible sur github : [https://github.com/LuXiFeR/UrliZr](https://github.com/LuXiFeR/UrliZr)
 
 J'ai commencé par simplement faire un générateur d'identifiant unique en python :
-{% highlight python linenos=table %}import string
+{% highlight python linenos=table %}
+import string
 from random import choice
 
 def genUid():
-
-chars = string.letters + string.digits
-
-return u''.join(choice(chars) for i in range(8)){% endhighlight %}
+  chars = string.letters + string.digits
+  return u''.join(choice(chars) for i in range(8))
+{% endhighlight %}
 Cette fonction me permet de générer un ID unique pour chaque URL de 8 caractères de long, ce qui me permet de stocker un paquet d'adresses en base de données.
 
 J'ai ensuite fait une petite interface web un peu stylisée pour pouvoir générer les URL raccourcis.
@@ -51,4 +51,4 @@ Peu de temps après, je me suis dit que ça serait sympa de savoir combien de fo
 
 J'ai maintenant accès aux statistiques des visiteurs qui suivent mes liens. Il faudrait pouvoir rajouter les hashtags et mot clés associés afin de mieux déterminer le profil mais c'est un bon début.
 
-Ensuite je me suis dit, c'est bien tout ça mais je suis obligé de passé par la page web pour raccourcir mes URL. J'ai donc décider de créer une API REST en POST pour générer mes URL depuis n'importe ou. Pour ça il suffit d'envoyer le paramètre url=http://domain.tld/params a l'adresse suivante : http://url.luxifer.fr/api/translate/&lt;method&gt; ou &lt;method&gt; peut être raw, json ou xml. C'est à dire comment va être formaté le résultat.
+Ensuite je me suis dit, c'est bien tout ça mais je suis obligé de passé par la page web pour raccourcir mes URL. J'ai donc décider de créer une API REST en POST pour générer mes URL depuis n'importe ou. Pour ça il suffit d'envoyer le paramètre `url=http://domain.tld/params` a l'adresse suivante : `http://url.luxifer.fr/api/translate/method` ou `method` peut être raw, json ou xml. C'est à dire comment va être formaté le résultat.
