@@ -49,7 +49,7 @@ cd /path/of/project
 capifony .
 {% endhighlight %}
 
-Cette commande va créer un fichier <em>Capfile</em> à la racine de votre projet et un fichier <em>deploy.rb</em> dans le dossier <em>app/config/</em>, ou dans le dossier <em>config/</em> pour un projet symfony 1.4.
+Cette commande va créer un fichier `Capfile` à la racine de votre projet et un fichier `deploy.rb` dans le dossier `app/config/`, ou dans le dossier `config/` pour un projet symfony 1.4.
 
 Ensuite il faut configurer le fichier deploy.rb afin de spécifier tous les paramètres nécessaires au déploiement.
 
@@ -81,7 +81,7 @@ Il est possible de définit une option en plus si l'utilisateur sur le serveur d
 set :user, "" # utilisateur distant
 {% endhighlight %}
 
-Pour un projet Symfony 2 il peut être utile d'ajouter ces options la, pour partager le dossier <em>vendors/</em> et <em>logs/</em>  entre toutes les releases et le fichier <em>parameters.ini</em>.
+Pour un projet Symfony 2 il peut être utile d'ajouter ces options la, pour partager le dossier `vendors/` et `logs/`  entre toutes les releases et le fichier `parameters.ini`.
 
 {% highlight ruby %}
 set :shared_files,      ["app/config/parameters.ini"]
@@ -101,7 +101,7 @@ Une fois ce fichier modifié, il faut initialiser la structure des dossiers sur 
 cap deploy:setup
 {% endhighlight %}
 
-Il faut maintenant configurer sur le serveur de production le fichier <em>parameters.ini</em> :
+Il faut maintenant configurer sur le serveur de production le fichier `parameters.ini` :
 
 {% highlight bash %}
 ssh production_server
@@ -116,9 +116,9 @@ Et une fois toutes ces étapes finies avec succès, il suffit juste de lancer la
 cap deploy
 {% endhighlight %}
 
-Cette commande va créer un nouveau dossier dans <em>/path/to/project/releases</em> et faire pointer le dossier <em>current/</em> vers cette dernière release. Ensuite installer les vendors si c'est un projet Symfony 2, publier les assets, vider le cache et lancer tous les hooks lié au scm.
+Cette commande va créer un nouveau dossier dans `/path/to/project/releases` et faire pointer le dossier `current/` vers cette dernière release. Ensuite installer les vendors si c'est un projet Symfony 2, publier les assets, vider le cache et lancer tous les hooks lié au scm.
 
-Une fois les projet déployé, il suffit juste de faire pointer son domaine vers le dossier <em>current/</em> du projet.
+Une fois les projet déployé, il suffit juste de faire pointer son domaine vers le dossier `current/` du projet.
 Pour les autres commandes disponibles je vous laisse vous référer à la page de <a href="http://capifony.org/" target="_blank">capifony</a>.
 
 Bon déploiement !

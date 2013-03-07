@@ -27,15 +27,15 @@ meta:
 ---
 Bonjour à tous!
 
-Ce matin je faisais un peu de R&amp;D au bureau pour savoir comment récupérer des mails d'un compte et sauvegarder les pièces jointes et les traiter plus tard. Après un peu de recherche sur google et twitter, je suis d'abord tombé sur <a title="IMAP" href="http://fr.php.net/manual/fr/book.imap.php">IMAP</a>. Et un peu après sur une classe publiée sur le site <a title="PHPClasses" href="http://www.phpclasses.org/package/2964-PHP-Retrieve-attachments-from-messages-in-a-mailbox.html">phpclasses</a>. La classe marche plutôt pas mal, sauf quelques petits problèmes. Tout d'abord les fichiers utilisent les <em>short_open_tag</em> de PHP, beaucoup de warnings sont levés si les messages traités ne contiennent pas de pièces jointes et enfin des paramètres passés à certaines fonctions sont notés comme constantes, comme par exemple le mode d'ouverture de fichier de la fonction <em>fopen</em>.
+Ce matin je faisais un peu de R&amp;D au bureau pour savoir comment récupérer des mails d'un compte et sauvegarder les pièces jointes et les traiter plus tard. Après un peu de recherche sur google et twitter, je suis d'abord tombé sur <a title="IMAP" href="http://fr.php.net/manual/fr/book.imap.php">IMAP</a>. Et un peu après sur une classe publiée sur le site <a title="PHPClasses" href="http://www.phpclasses.org/package/2964-PHP-Retrieve-attachments-from-messages-in-a-mailbox.html">phpclasses</a>. La classe marche plutôt pas mal, sauf quelques petits problèmes. Tout d'abord les fichiers utilisent les `short_open_tag` de PHP, beaucoup de warnings sont levés si les messages traités ne contiennent pas de pièces jointes et enfin des paramètres passés à certaines fonctions sont notés comme constantes, comme par exemple le mode d'ouverture de fichier de la fonction `fopen`.
 
 Bref, après plusieurs essais et modifications de mon côté, j'ai transformé cette classe en full objet, documentée et ajouter quelques conditions de gestion d'erreurs.
 
-[gist]https://gist.github.com/3235487[/gist]
+[https://gist.github.com/3235487](https://gist.github.com/3235487)
 
 Pour ce qui est de l'utilisation, voici une petite démo rapide d'utilisation pour parcourir sa boite mail et sauvegarder les messages dans un dossier défini :
 
-[gist]https://gist.github.com/3235580[/gist]
+[https://gist.github.com/3235580](https://gist.github.com/3235580)
 
 N'hésitez pas a commenter ou faire des suggestions par rapport au code. Prochaine étape trouver un moyen de sécuriser la boite mail qui va recevoir les pièces jointes pour les attacher à un utilisateur d'un site. Un peu comme Flickr qui permet d'ajouter des photos à son stream par mail.
 

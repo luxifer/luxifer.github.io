@@ -38,8 +38,8 @@ Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur 
 
 Je ne sais pas si vous le savez, mais sur iPhone, iPod et iPad il est impossible de cliquer sur le bouton parcourir d'un formulaire sur une pag web pour joindre un fichier. Celui-ci est tout simplement grisé... On ne peut pas accéder a son arborescence de fichier depuis le navigateur safari sur iOS. Ceci est du au fait que ce système d'exploitation, chaque application possède son propre système de fichier et ne peut pas accéder au contenu d'une autre application. Je ne comprend pas le choix des développeurs Apple sur ce point là. Pourquoi brider l'expérience web mobile et de forcer à passer à des applications tierces pour pallier à ce problème.
 
-Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contourner le bridage de Apple. Il s'agit de <a href="http://picupapp.com/index.html">Picup</a>. Cette application va transformer les champs <em>&lt;input type="file"&gt;</em> en lien <em>fileupload://</em> qui va ensuite faire appel a l'appli installée sur le périphérique. Pour intégrer cette appli a son site internet il suffit d'ajouter le fichier javascript téléchargeable <a href="https://castle.so/dl/5tt6l+s" target="_blank">ici</a> sur la page contenant le formulaire. Et ensuite il suffit d'utiliser le helper pour générer l'url à passer a l'appli pour traiter le fichier.
-<pre lang="javascript">$(function() {
+Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contourner le bridage de Apple. Il s'agit de <a href="http://picupapp.com/index.html">Picup</a>. Cette application va transformer les champs `&lt;input type="file"&gt;` en lien `fileupload://` qui va ensuite faire appel a l'appli installée sur le périphérique. Pour intégrer cette appli a son site internet il suffit d'ajouter le fichier javascript téléchargeable <a href="https://castle.so/dl/5tt6l+s" target="_blank">ici</a> sur la page contenant le formulaire. Et ensuite il suffit d'utiliser le helper pour générer l'url à passer a l'appli pour traiter le fichier.
+{% highlight javascript linenos=table %}$(function() {
   Picup.convertFileInput('input',{
     'referername': escape('referer'),
     'callbackurl': escape('url de callback'),
@@ -49,16 +49,16 @@ Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contour
     'purpose': escape('texte a afficher en dessous de l application'),
     'referrerfavicon': escape('icone a afficher dans l application')
   });
-});</pre>
+});{% endhighlight %}
 Ne pas oublier de faire de la détection de navigateur ajant d'ajouter ce script, car sur le navigateur natif android l'upload marche. Sur la page indiquée en callback, il peut être utile de créer une fonction de callback avec le helper picup pour faire un traitement supplémentaire sur les fichiers uploadés avec l'application.
-<pre lang="javascript">Picup.callbackHandler = function(params){
+{% highlight javascript linenos=table %}Picup.callbackHandler = function(params){
   for(var key in params){
     alert(key+' == '+params[key]);
   }
-}</pre>
+}{% endhighlight %}
 Pour voir le résultat il y a une démo sur le site de l'application, avec un <a href="http://picupapp.com/scratchpad.html">scratchpad</a> qui permet de modifier les paramètres de la requête afin de faire les tests directement sur son serveur.
 
-Voilà pour le côter javascript, il reste a écrire côter serveur la méthode qui va traiter la requête POST qui va être faite par picup et l'intégration est terminée. Le rendu est un bouton à la place du champ <em>&lt;input type="file"&gt;</em> qui va ouvrir l'application et permettre à l'utilisateur de choisir une image parmis sa galerie.
+Voilà pour le côter javascript, il reste a écrire côter serveur la méthode qui va traiter la requête POST qui va être faite par picup et l'intégration est terminée. Le rendu est un bouton à la place du champ `&lt;input type="file"&gt;` qui va ouvrir l'application et permettre à l'utilisateur de choisir une image parmis sa galerie.
 
 Il y a quand même deux limites à cette technique, impossible de choisir plusieurs fichiers en même temps, et il est seulement possible de parcourir sa galerie. Donc impossible d'ajouter un pdf, un document ou tout autre type de fichier.
 

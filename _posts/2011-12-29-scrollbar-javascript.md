@@ -34,7 +34,7 @@ Bonjour tout le monde,
 
 Tout d'abord, j'ai une petite annonce à faire. Je profite de l'introduction de ce billet pour m'exprimer. Je viens de migrer mon blog de mon hébergement mutualisé vers mon serveur dédié pour des questions de performance et pour avoir un meilleur contrôle. C'est pourquoi ce matin il n'était dispo qu'en IPV6. Le TTL des DNS chez OVH est assez long donc le changement de pointage du domaine a pris plus de temps que prévu. Bref.
 
-Dans ce billet je vais parler d'une découverte que j'ai fait hier, c'est un plugin jQuery qui permet de mettre des scrollbar sur ses blocs html. Ce qui permet de pouvoir mieux intégrer cette barre de navigation plutôt que d'utiliser la propriété CSS <em>overflow</em>.
+Dans ce billet je vais parler d'une découverte que j'ai fait hier, c'est un plugin jQuery qui permet de mettre des scrollbar sur ses blocs html. Ce qui permet de pouvoir mieux intégrer cette barre de navigation plutôt que d'utiliser la propriété CSS `overflow`.
 
 Je plugin permet de personnaliser plutôt bien ses scrollbar, en définissant des effets de défilement, une vitesse, positionner ses boutons, etc. Plus plugin se base sur l'id des éléments, ce qui nous permet de personnaliser le squelette de nos boîtes. Il est disponible à l'adresse suivante : <a title="http://manos.malihu.gr/jquery-custom-content-scroller" href="http://manos.malihu.gr/jquery-custom-content-scroller">http://manos.malihu.gr/jquery-custom-content-scroller</a>
 

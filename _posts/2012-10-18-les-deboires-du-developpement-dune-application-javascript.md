@@ -25,8 +25,8 @@ Récemment j'ai du développer un bouton de partage. On peut trouver ça simple 
 
 Et oui sur [abbr title="Internet Explorer"]IE[/abbr] le code suivant ne marche pas
 
-[gist]https://gist.github.com/3914091[/gist]
+[https://gist.github.com/3914091](https://gist.github.com/3914091)
 
 Il faut utiliser
 
-[gist]https://gist.github.com/3914087[/gist]
+[https://gist.github.com/3914087](https://gist.github.com/3914087)

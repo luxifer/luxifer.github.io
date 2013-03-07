@@ -36,12 +36,12 @@ Le problème qui se pose c'est le passage en production du site. Quelles sont le
 
 La se pose plusieurs problèmes. Comment savoir qu'une page ne contient pas les mêmes javascripts qu'une autre ? On va calculer un hash MD5 de tous les javascripts de la page qui est demandée, lancer le processus et stocker le résultat avec comme nom de fichier le hash calculé précédemment.
 
-Deuxième problème, comment savoir qu'il n'y a pas déjà une tâche de lancée ? Il y a plusieurs possibilités, mais après avoir essayé <em>flock() </em>ou d'autres technique plutôt propres, je n'ai pas eu d'autres choix que de faire mon propre système de lock. C'est à dire, au lancement de la tâche, je vérifie que le fichier de lock avec le hash n'existe pas, s'il n'est pas présent je le crée et je commence la tâche de minification. Sinon le processus se termine. Avec cette technique on est sûr qu'un seul processus va essayer d'ouvrir le fichier pour y stocker le résultat de la minification. Si le site a pas mal de visite, la génération de tous les javascripts devrait se faire assez vite pour les différentes pages.
+Deuxième problème, comment savoir qu'il n'y a pas déjà une tâche de lancée ? Il y a plusieurs possibilités, mais après avoir essayé `flock() `ou d'autres technique plutôt propres, je n'ai pas eu d'autres choix que de faire mon propre système de lock. C'est à dire, au lancement de la tâche, je vérifie que le fichier de lock avec le hash n'existe pas, s'il n'est pas présent je le crée et je commence la tâche de minification. Sinon le processus se termine. Avec cette technique on est sûr qu'un seul processus va essayer d'ouvrir le fichier pour y stocker le résultat de la minification. Si le site a pas mal de visite, la génération de tous les javascripts devrait se faire assez vite pour les différentes pages.
 
 Le dernier point à aborder, c'est la mise a jour de ces javascripts minifiés. Si on modifie un javascript, au prochain déploiement vu que les javascripts minifiés existent déjà, il ne sera pas pris en compte. Il suppit juste de passer une petite tâche des javascripts minifiés à chaque déploiement et c'est réglé.
 
 Pour le code, voici les différents fichier :
-Tout d'abord le <em>AssetHelper.php</em>
+Tout d'abord le `AssetHelper.php`
 
 {% highlight php linenos=table %}
 <?php 
@@ -87,7 +87,7 @@ function get_javascripts()
 ?>
 {% endhighlight %}
 
-Ensuite la tâche de minification <em>genMinifiedJs.php</em> à placer à la racine du répertoire lib du projet symfony
+Ensuite la tâche de minification `genMinifiedJs.php` à placer à la racine du répertoire lib du projet symfony
 
 {% highlight php %}
 #!/usr/bin/env php
