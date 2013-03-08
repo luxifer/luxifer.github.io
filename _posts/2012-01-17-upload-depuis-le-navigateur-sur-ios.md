@@ -39,7 +39,7 @@ Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur 
 Je ne sais pas si vous le savez, mais sur iPhone, iPod et iPad il est impossible de cliquer sur le bouton parcourir d'un formulaire sur une pag web pour joindre un fichier. Celui-ci est tout simplement grisé... On ne peut pas accéder a son arborescence de fichier depuis le navigateur safari sur iOS. Ceci est du au fait que ce système d'exploitation, chaque application possède son propre système de fichier et ne peut pas accéder au contenu d'une autre application. Je ne comprend pas le choix des développeurs Apple sur ce point là. Pourquoi brider l'expérience web mobile et de forcer à passer à des applications tierces pour pallier à ce problème.
 
 Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contourner le bridage de Apple. Il s'agit de [Picup](http://picupapp.com/index.html). Cette application va transformer les champs `<input type="file">` en lien `fileupload://` qui va ensuite faire appel a l'appli installée sur le périphérique. Pour intégrer cette appli a son site internet il suffit d'ajouter le fichier javascript téléchargeable [ici](https://castle.so/dl/5tt6l+s) sur la page contenant le formulaire. Et ensuite il suffit d'utiliser le helper pour générer l'url à passer a l'appli pour traiter le fichier.
-{% highlight javascript linenos=table %}$(function() {
+{% highlight javascript %}$(function() {
   Picup.convertFileInput('input',{
     'referername': escape('referer'),
     'callbackurl': escape('url de callback'),
@@ -51,7 +51,7 @@ Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contour
   });
 });{% endhighlight %}
 Ne pas oublier de faire de la détection de navigateur ajant d'ajouter ce script, car sur le navigateur natif android l'upload marche. Sur la page indiquée en callback, il peut être utile de créer une fonction de callback avec le helper picup pour faire un traitement supplémentaire sur les fichiers uploadés avec l'application.
-{% highlight javascript linenos=table %}Picup.callbackHandler = function(params){
+{% highlight javascript %}Picup.callbackHandler = function(params){
   for(var key in params){
     alert(key+' == '+params[key]);
   }
