@@ -23,7 +23,7 @@ Bonjour,
 
 Ça fait longtemps que je n'ai pas posté de billet. Bah c'est parce que je n'avais pas grand chose à raconter. Mais Mardi c'était la Saint Patrick's Day, et donc la bière coulait à flot. Surtout la Guinness.
 
-[caption id="attachment_77" align="alignnone" width="300" caption="Verre de Guinness vide, et flyer pour un jeu spécial"]<img class="size-medium wp-image-77" title="Guinness's glass" src="http://luxifer.fr/wordpress/wp-content/uploads/2009/03/16032009115-300x225.jpg" alt="Verre de Guinness vide, et flyer pour un jeu spécial" width="300" height="225" />[/caption]
+<img class="size-medium wp-image-77" title="Guinness's glass" src="http://luxifer.fr/wordpress/wp-content/uploads/2009/03/16032009115-300x225.jpg" alt="Verre de Guinness vide, et flyer pour un jeu spécial" width="300" height="225" />
 
 Je suis donc allé à Glasgow avec Vincent et 5 potes français. Nous sommes allé dans un pub qui s'appelle Waxy O'Connors. Pub irlandais, avec une décoration intérieure magnifique. Mais je n'ai pas pris de photo il faisait trop noir, et beaucoup trop de monde. Le pub est sur 3 étages, avec 2 bars pour le service.
 
@@ -31,7 +31,7 @@ Nous avons mis du temps à trouver une table et des chaises pour 7, mais on a qu
 
 En plus le billet de train aller-retour pour Glasgow n'est pas très cher. Seulement £3.30, ce qui fait 3.60€ au taux actuel. Par contre on a du rentrer à minuit, car c'est le dernier train. Sinon le suivant est à 5h du matin.
 
-[caption id="attachment_78" align="alignnone" width="225" caption="C&#39;est le parchemin qui déclare l&#39;ouverture du pub. "]<img class="size-medium wp-image-78" title="Parchemin" src="http://luxifer.fr/wordpress/wp-content/uploads/2009/03/16032009117-225x300.jpg" alt="C'est le parchemin qui déclare l'ouverture du pub. " width="225" height="300" />[/caption]
+<img class="size-medium wp-image-78" title="Parchemin" src="http://luxifer.fr/wordpress/wp-content/uploads/2009/03/16032009117-225x300.jpg" alt="C'est le parchemin qui déclare l'ouverture du pub. " width="225" height="300" />
 
 Cette semaine c'est spécial Irlande à l'Union. Donc demain c'est soirée irlandaise, avec des réductions sur la Guinness, encore.
 

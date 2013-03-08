@@ -36,8 +36,6 @@ Salut à tous ;)
 
 Début Juillet j'ai commandé un Dell XPS 15z. Ça y est, je l'ai reçu, après un mois d'attente. Et je ne suis pas déçu. L'écran est magnifique avec une résolution 1920x1080. La finition est tip top. Bref, bien content.
 
-[gallery]
-
 Voilà, c'est bien, j'ai fait joujou avec mon nouveau laptop, mais voilà, c'est bien gentil tout ça, mais on fait pas grand chose avec Windows.
 Donc vient l'étape cruciale de la mise en route : l'installation de Linux sur du matériel tout neuf avec la nouvelle techno Nvidia Optimus.
 
@@ -47,7 +45,7 @@ Tout d'abord, lancer gparted depuis une clé USB afin de configurer les partitio
 
 Après quelques fouilles sur internet, je découvre la solution miracle : il faut modifier le protocole utilisé par le module de gestion de la souris.
 
-<code># rmmode psmouse &amp;&amp; modprobe psmouse proto=imps</code>
+`# rmmode psmouse && modprobe psmouse proto=imps`
 
 Magique, le touchpad marche. On peut donc passer à la création des partitions. C'est là qu'on a une deuxième surprise, il y a déjà 3 partitions primaires prises pour Windows 7.  Une pour le recovery, une de récupération et la 3ème qui contient windows. Eh ben le seule solution c'est de créer une partition étendue, et ensuite de créer ses partitions logiques à l'intérieur.
 
@@ -56,15 +54,15 @@ Magique, le touchpad marche. On peut donc passer à la création des partitions.
 Alors la on se dit qu'on va récupérer la dernière release sur le site de http://www.archlinux.org/download/
 Donc on récupère l'image de la netinstall et on lance un petit
 
-<code># dd if=/chemin/de/l/iso.iso of=/dev/sdx</code>
+`# dd if=/chemin/de/l/iso.iso of=/dev/sdx`
 
 Donc tout va bien on branche la clé USB sur le laptop, on boot dessus et on arrive sur le shell root. Pour commencer on est français alors :
 
-<code># loadkeys fr</code>
+`# loadkeys fr`
 
 Ca nous évitera certaines prises de tête à chercher ou se trouve tel caractère sur un clavier QWERTY alorsqu'on a un clavier AZERTY. Ensuite on lance le script d'installation de Archlinux :
 
-<code># /arch/setup</code>
+`# /arch/setup`
 
 Et là ou se retrouve avec quelque-chose qui ressemble à l'écran suivant :
 

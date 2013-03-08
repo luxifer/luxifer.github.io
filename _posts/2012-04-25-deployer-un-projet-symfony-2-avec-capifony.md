@@ -77,13 +77,13 @@ set :keep_releases, 3
 
 Il est possible de définit une option en plus si l'utilisateur sur le serveur de production est différent de celui de la machine locale :
 
-{% highlight ruby %}
+{% highlight ruby linenos=table %}
 set :user, "" # utilisateur distant
 {% endhighlight %}
 
 Pour un projet Symfony 2 il peut être utile d'ajouter ces options la, pour partager le dossier `vendors/` et `logs/`  entre toutes les releases et le fichier `parameters.ini`.
 
-{% highlight ruby %}
+{% highlight ruby linenos=table %}
 set :shared_files,      ["app/config/parameters.ini"]
 set :shared_children,     [app_path + "/logs", web_path + "/uploads", "vendor"]
 set :update_vendors, true
@@ -91,7 +91,7 @@ set :update_vendors, true
 
 Si votre projet utilise Composer comme gestionnaire de dépendances il faut aussi rajouter cette option :
 
-{% highlight ruby %}
+{% highlight ruby linenos=table %}
 set :use_composer, true
 {% endhighlight %}
 

@@ -32,7 +32,7 @@ meta:
   _thumbnail_id: '298'
   _shorten_url_bitly: http://j.mp/y31ljV
 ---
-<a href="http://blog.luxifer.fr/2012/01/17/upload-depuis-le-navigateur-sur-ios/picup-app/" rel="attachment wp-att-212"><img class="alignnone size-full wp-image-212" title="picup-app" src="http://blog.luxifer.fr/wp-content/uploads/2012/01/picup-app.png" alt="" width="320" height="480" /></a>
+![](http://blog.luxifer.fr/wp-content/uploads/2012/01/picup-app.png)
 
 Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur les différents choix faits par Apple concernant iOS. Je ne parlerai que d'un seul point car mon but n'est pas de créer un troll mais de partager la solution que j'ai trouvé pour pallier à ce problème.
 
