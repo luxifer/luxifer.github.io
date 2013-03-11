@@ -66,7 +66,7 @@ Ca nous évitera certaines prises de tête à chercher ou se trouve tel caractè
 
 Et là ou se retrouve avec quelque-chose qui ressemble à l'écran suivant :
 
-<img class="alignnone" title="Menu global Installation Archlinux" src="http://wiki.archlinux.fr/images/8/81/06_global_menu.jpg" alt="Menu global Installation Archlinux" width="582" height="328" />
+![Menu global Installation Archlinux](http://wiki.archlinux.fr/images/8/81/06_global_menu.jpg "Menu global Installation Archlinux")
 
 J'ai piqué la capture d'écran sur le Wiki Archlinux france, étant donné que je n'ai aps pensé à en faire pendant mon installation.
 
