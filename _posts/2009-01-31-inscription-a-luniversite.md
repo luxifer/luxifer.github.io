@@ -23,7 +23,7 @@ On attaque la partie laborieuse de la semaine : finaliser l'inscription à l'uni
 
 Tout d'abord nous avions rendez vous à 9h15 pour une présentation de l'université de la vie étudiante à Paisley pour les étrangers. Nous avons donc eut droit à 2h de présentation, effectuée par différents intervenants de l'université et autres, suivant les catégories concernées. Nous avons aussi eu le droit à une présentation de la Police de Paisley et des pompiers. Je note en premier lieu une tendance à la paranoïa de la part des britanniques.
 
-![Voici l'entrée de l'université, il fait gris, on est en Ecosse](http://luxifer.fr/wordpress/wp-content/uploads/2009/01/29012009039-300x225.jpg "Entrée principale de l'université")
+![Voici l'entrée de l'université, il fait gris, on est en Ecosse](/images/29012009039-300x225.jpg "Entrée principale de l'université")
 
 A la fin de cette présentation nous avons pu nous inscrire gratuitement pour un voyage d'une journée dans la capitale de l'écosse : Edimbourg. Ce voyage est offert par l'université aux nouveaux étudiants étrangers. Nous avons aussi eut le droit à des viennoiseries et une bouteille d'eau. Voilà pour la partie facile de la journée, le plus dur reste à venir.
 

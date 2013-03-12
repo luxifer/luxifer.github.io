@@ -32,7 +32,7 @@ meta:
   _thumbnail_id: '298'
   _shorten_url_bitly: http://j.mp/y31ljV
 ---
-![](http://blog.luxifer.fr/wp-content/uploads/2012/01/picup-app.png)
+![](/images/picup-app.png)
 
 Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur les différents choix faits par Apple concernant iOS. Je ne parlerai que d'un seul point car mon but n'est pas de créer un troll mais de partager la solution que j'ai trouvé pour pallier à ce problème.
 

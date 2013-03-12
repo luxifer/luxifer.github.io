@@ -8,7 +8,7 @@ layout: default
 </article>
  
 <div id="related">
-  <h2>Related Posts</h2>
+  <h3>Related Posts</h3>
   <ul class="posts">
     {% for post in site.related_posts limit:5 %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> <small class="muted"> posté le {{ post.date | date_to_string }}</small></li>
@@ -16,12 +16,21 @@ layout: default
   </ul>
 </div>
 
+  <ul class="pager">
+    {% if page.previous %}
+    <li class="previous"><a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>
+    {% endif %}
+    {% if page.next %}
+    <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>
+    {% endif %}
+  </ul>
+
 {% if site.disqus %}
 <div id="comments">
   <h2>Comments</h2>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
-    var disqus_identifier = "{{ page.meta.dsq_thread_id }}";
+    var disqus_identifier = "{{ page.meta.dsq_thread_id ? page.meta.dsq_thread_id : page.url }}";
     (function() {
      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
      dsq.src = 'http://{{ site.disqus.id }}.disqus.com/embed.js';

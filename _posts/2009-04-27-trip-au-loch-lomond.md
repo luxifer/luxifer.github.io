@@ -21,19 +21,19 @@ La journée a commencé à 9h00 après un réveil assez difficile, dû à la soi
 **Début de la visite**
 Nous commençons par prendre le sentier sur la rive droite du lac, pour aller profiter de la vue du château.
 
-![Vue du château](http://luxifer.fr/wordpress/wp-content/uploads/2009/04/25042009225-300x225.jpg "25042009225")
+![Vue du château](/images/25042009225-300x225.jpg "25042009225")
 
 Comme vous pouvez le voir l'herbe est bien verte. Voire même vert fluorescent. C'est pas ici que le gazon manquera d'eau. Après ce petit parcours, nous nous dirigeons vers le centre du village pour trouver un endroit où manger.
 
 Sur le passage, nous empruntons un petit sentier au milieu de quelques sculptures étranges.
 
-![Est-ce pour repousser les oiseaux?](http://luxifer.fr/wordpress/wp-content/uploads/2009/04/25042009218-300x225.jpg "25042009218")
+![Est-ce pour repousser les oiseaux?](/images/25042009218-300x225.jpg "25042009218")
 
 Après ce petit détour, nous trouvons un petit restaurant italien pas très cher. La première chose qui me choque, c'est qu'il est 14h30, et que nous sommes les premiers, il me semblais que c'était les pays du sud qui mangeait tard. Bref. Les plats sont bien cuisinés, et très bon pour le prix. Le seul truc que je regrette, c'est qu'il n'y a qu'en France où on nous sert une caraffe d'eau... Décidément, c'est pas leur fort la nourriture.
 
 Après ce repas, nous décidons de faire une petite marche sur la rive gauche du loch, pour visiter le Trossachs National Park. D'où on a une belle vue sur le lac tout de même.
 
-![Vue sur le loch](http://luxifer.fr/wordpress/wp-content/uploads/2009/04/25042009229-300x225.jpg "25042009229")
+![Vue sur le loch](/images/25042009229-300x225.jpg "25042009229")
 
 Après cette petite ballade dans le parc, nous commençons à être un peu fatigué, il est donc temps de rentrer sur Paisley.
 
