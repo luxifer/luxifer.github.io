@@ -11,6 +11,7 @@ domain: blog.luxifer.fr
 title: Blog de Florent Viel
 author: Florent Viel
 email: florent.viel69@gmail.com
+include: [images]
 
 # configuration for ehancements, uncomment to enable
 
