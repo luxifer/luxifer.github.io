@@ -12,6 +12,7 @@ title: Blog de Florent Viel
 author: Florent Viel
 email: florent.viel69@gmail.com
 include: [images]
+paginate: 5
 
 # configuration for ehancements, uncomment to enable
 
