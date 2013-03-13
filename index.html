@@ -8,8 +8,7 @@ description: A description about my blog homepage
   <ul class="media-list">
     {% for post in site.posts %}
       <li class="media">
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        <span class="muted">{{ post.date | date_to_string }}</span>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a> <small class="muted">le {{ post.date | date_to_string }}</small></h4>
       </li>
     {% endfor %}
   </ul>
