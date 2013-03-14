@@ -4,8 +4,24 @@ $gridColumnWidth: 50px;
 $gridColumnWidth1200: 50px;
 $gridGutterWidth1200: 10px;
 $gridGutterWidth1200: 10px;
+$sansFontFamily: 'Poly', serif;
 
 @import "bootstrap";
 @import "bootstrap-responsive";
 
 // add your styles, see http://compass-style.org/
+
+h1, h2, h3 {
+    font-family: 'Lobster Two', cursive;
+}
+
+h4, h5, h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+pre {
+    overflow: auto;
+    code {
+        white-space: pre;
+    }
+}

@@ -204,7 +204,7 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poly", serif;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
@@ -968,7 +968,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poly", serif;
 }
 
 label {
@@ -4221,7 +4221,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search .search-query {
   margin-bottom: 0;
   padding: 4px 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poly", serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -7057,4 +7057,18 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     height: auto !important;
     overflow: visible !important;
   }
+}
+h1, h2, h3 {
+  font-family: 'Lobster Two', cursive;
+}
+
+h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+pre {
+  overflow: auto;
+}
+pre code {
+  white-space: pre;
 }
