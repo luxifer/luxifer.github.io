@@ -16,6 +16,7 @@ layout: default
   </ul>
 </div>
 
+<div>
   <ul class="pager">
     {% if page.previous %}
     <li class="previous"><a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>
@@ -24,6 +25,7 @@ layout: default
     <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>
     {% endif %}
   </ul>
+</div>
 
 {% if site.disqus %}
 <div id="comments">
