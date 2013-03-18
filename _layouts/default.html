@@ -42,8 +42,16 @@
              
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="/">Home</a></li>
                 <li><a href="/a-propos.html">A propos</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li><a href="http://git.luxifer.fr" target="_blank">Gitlab</a></li>
+                    <li><a href="http://cloud.luxifer.fr" target="_blank">Cloud privé</a></li>
+                    <li><a href="http://lxr.wf" target="_blank">URL Shortener</a></li>
+                  </ul>
+                </li>
+                <li><a href="http://florentviel.com" target="_blank">CV</a></li>
               </ul>
             </div>
              
@@ -52,8 +60,15 @@
         </div>
       </header>
       <div class="container">
-        {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-        {{ content }}
+        <div class="row">
+          <div class="span8 offset2">
+            {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          {{ content }}
+        </div>
       </div>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
