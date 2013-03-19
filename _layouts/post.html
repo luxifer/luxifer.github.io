@@ -4,12 +4,12 @@ layout: default
 <div class="span2">
   {% if page.date %}<span class="muted">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</span>{% endif %}
 </div>
-<div class="span8">
-  <article>
+<div class="span8 content">
+  <article class="padding10">
   {{ content }}
   </article>
 
-  <div>
+  <div class="padding10">
     <ul class="pager">
       {% if page.previous %}
       <li class="previous"><a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>
@@ -21,7 +21,7 @@ layout: default
   </div>
 
   {% if site.disqus %}
-  <div id="comments">
+  <div class="comments padding10">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_identifier = "{{ page.meta.dsq_thread_id ? page.meta.dsq_thread_id : page.url }}";

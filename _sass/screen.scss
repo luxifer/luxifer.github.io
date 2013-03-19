@@ -1,9 +1,9 @@
 $linkColor: #5e777d;
 $baseFontSize: 16px;
-$gridColumnWidth: 60px;
-$gridColumnWidth1200: 60px;
-$gridGutterWidth1200: 10px;
-$gridGutterWidth1200: 10px;
+$gridColumnWidth: 70px;
+$gridColumnWidth1200: 70px;
+$gridGutterWidth: 20px;
+$gridGutterWidth1200: 20px;
 $sansFontFamily: 'Poly', serif;
 
 @import "bootstrap";
@@ -32,5 +32,8 @@ pre {
 
 .content {
     background: white;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+}
+
+.padding10 {
+    padding: 10px;
 }
