@@ -4,7 +4,7 @@ description: A description about my blog homepage
 ---
 
 <div class="span8 offset2 content">
-  <div class="posts">
+  <div class="posts padding10">
     <h2>Blog Posts</h2>
     <ul class="media-list">
       {% for post in paginator.posts %}
@@ -15,7 +15,7 @@ description: A description about my blog homepage
     </ul>
   </div>
 
-  <div class="pagination">
+  <div class="pagination padding10">
     <ul>
       {% if paginator.previous_page %}
       <li>
@@ -63,7 +63,7 @@ description: A description about my blog homepage
     </ul>
   </div>
 
-  <div class="pages">
+  <div class="pages padding10">
     <h2>Pages</h2>
     <ul class="media-list">
       {% for page in site.html_pages %}

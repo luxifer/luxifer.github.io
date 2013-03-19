@@ -50,6 +50,7 @@ akismet:
 Maintenant le plugin configuré, il faut activé le plugin dans le fichier `config/projectConfiguration.class.php`.
 
 {% highlight php %}
+<?php
 $this->enablePlugins('drAkismetPlugin');
 {% endhighlight %}
 
@@ -58,6 +59,7 @@ Maintenant que le plugin est activé et disponible, il faut se poser la question
 Donc pour utiliser le validateur, rien de plus simple, il s'utilise comme un validateur symfony classique. Ouvrez le `form` de votre projet et allez dans la méthode `configure()`.
 
 {% highlight php %}
+<?php
 $this->validatorSchema['text'] = new sfValidatorAnd(array( //text est le contenu du commentaire, adaptez à votre modèle
   $this->validatorSchema['text'],
   new drAkismetValidatorSpam(array(
@@ -76,12 +78,14 @@ Et voilà, maintenant dès que vous posterez un commentaire, si Akismet le décl
 Maintenant on peut se dire qu'on a besoin de faire un peu plus que ne pas sauvegarder le commentaire. C'est possible, on peut écouter la requête avant qu'elle soit envoyée à Akismet et récupérer la réponse avant qu'elle ne soit traitée par le validateur. Pour ça j'ai du faire une petite modification du plugin pour qu'il récupère le dispatcher d'événement de l'application au lieux d'en créer un nouveau. Ouvrez le fichier `lib/api/connection/drAkismetApiSocketConnection.class.php` et remplacez le contenu du constructeur pa ça :
 
 {% highlight php %}
+<?php
 $this->_dispatcher = sfContext::getInstance()->getEventDispatcher();
 {% endhighlight %}
 
 Donc maintenant le dispatcher est connecté à symfony, il faut ensuite récupérer l'événement pour indiquer quelle méthode va l'écouter :
 
 {% highlight php %}
+<?php
 $this->dispatcher->connect('akismet.pre_request', array('listenToPreRequest'));
 $this->dispatcher->connect('akismet.raw_response', array('listenToRawResponse'));
 {% endhighlight %}
@@ -89,6 +93,7 @@ $this->dispatcher->connect('akismet.raw_response', array('listenToRawResponse'))
 Maintenant qu'on écoute les événements et qu'on a défini les méthodes qui vont les traiter voici quelques méthodes utiles pour `parser` la réponser qu renvoit le serveur.
 
 {% highlight php %}
+<?php
 public static function listenToRawResponse(sfEvent $event)
 {
   $rawResponse = new drAkismetApiResponse($event['response']);
