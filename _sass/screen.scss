@@ -11,6 +11,10 @@ $sansFontFamily: 'Poly', serif;
 
 // add your styles, see http://compass-style.org/
 
+body {
+    background-image: url('/images/graphy.png');
+}
+
 h1, h2, h3 {
     font-family: 'Lobster Two', cursive;
 }
@@ -24,4 +28,9 @@ pre {
     code {
         white-space: pre;
     }
+}
+
+.content {
+    background: white;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
 }

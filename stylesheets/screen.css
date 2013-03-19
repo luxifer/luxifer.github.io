@@ -7058,6 +7058,10 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     overflow: visible !important;
   }
 }
+body {
+  background-image: url("/images/graphy.png");
+}
+
 h1, h2, h3 {
   font-family: 'Lobster Two', cursive;
 }
@@ -7071,4 +7075,9 @@ pre {
 }
 pre code {
   white-space: pre;
+}
+
+.content {
+  background: white;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }

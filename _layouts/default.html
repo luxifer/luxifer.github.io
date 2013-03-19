@@ -60,13 +60,15 @@
         </div>
       </header>
       <div class="container">
-        <div class="row">
+        <div class="row content">
           <div class="span12">
-            {% if page.title %}<h1 class="text-center">{{ page.title }}</h1>{% endif %}
+            {% if page.title %}
+            <h1 class="text-center">{{ page.title }}</h1>
             <hr>
+            {% endif %}
           </div>
         </div>
-        <div class="row">
+        <div class="row content">
           {{ content }}
         </div>
       </div>
