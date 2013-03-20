@@ -7084,3 +7084,7 @@ pre code {
 .padding10 {
   padding: 10px;
 }
+
+.aside {
+  border-top: 5px solid #5e777d;
+}
