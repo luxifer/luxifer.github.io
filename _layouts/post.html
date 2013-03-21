@@ -5,7 +5,7 @@ layout: default
   <div class="padding10 content aside">
     {% if page.date %}<span class="muted">Posted on {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</span><br />{% endif %}
     {% for tag in page.tags %}
-    <span class="label" style="background:rgb({{ tag % 255 }})">{{ tag }}</span>
+    <span class="label {{ tag }}">{{ tag }}</span>
     {% endfor %}
   </div>
 </div>

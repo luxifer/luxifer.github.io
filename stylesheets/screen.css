@@ -7088,3 +7088,22 @@ pre code {
 .aside {
   border-top: 5px solid #5e777d;
 }
+
+.label.php {
+  background: #7777AA;
+}
+.label.ruby {
+  background: #C61A1A;
+}
+.label.github {
+  background: #4183C4;
+}
+.label.python {
+  background: #FFBC29;
+}
+.label.git {
+  background: #F14E32;
+}
+.label.javascript {
+  background: #F0DB4F;
+}

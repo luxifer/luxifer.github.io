@@ -41,3 +41,29 @@ pre {
 .aside {
     border-top: 5px solid #5e777d;
 }
+
+.label {
+    &.php {
+        background: #7777AA;
+    }
+
+    &.ruby {
+        background: #C61A1A;
+    }
+
+    &.github {
+        background: #4183C4;
+    }
+
+    &.python {
+        background: #FFBC29;
+    }
+
+    &.git {
+        background: #F14E32;
+    }
+
+    &.javascript {
+        background: #F0DB4F;
+    }
+}
