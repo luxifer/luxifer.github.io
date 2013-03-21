@@ -42,28 +42,43 @@ pre {
     border-top: 5px solid #5e777d;
 }
 
+$php: #7777AA;
+$ruby: #C61A1A;
+$github: #4183C4;
+$python: #FFBC29;
+$git: #F14E32;
+$javascript: #F0DB4F;
+
 .label {
+    border: 1px solid darken($grayLight, 10%);
+
     &.php {
-        background: #7777AA;
+        background: $php;
+        border: 1px solid darken($php, 10%);
     }
 
     &.ruby {
-        background: #C61A1A;
+        background: $ruby;
+        border: 1px solid darken($ruby, 10%);
     }
 
     &.github {
-        background: #4183C4;
+        background: $github;
+        border: 1px solid darken($github, 10%);
     }
 
     &.python {
-        background: #FFBC29;
+        background: $python;
+        border: 1px solid darken($python, 10%);
     }
 
     &.git {
-        background: #F14E32;
+        background: $git;
+        border: 1px solid darken($git, 10%);
     }
 
     &.javascript {
-        background: #F0DB4F;
+        background: $javascript;
+        border: 1px solid darken($javascript, 10%);
     }
 }

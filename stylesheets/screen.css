@@ -7089,21 +7089,30 @@ pre code {
   border-top: 5px solid #5e777d;
 }
 
+.label {
+  border: 1px solid gray;
+}
 .label.php {
-  background: #7777AA;
+  background: #7777aa;
+  border: 1px solid #5c5c92;
 }
 .label.ruby {
-  background: #C61A1A;
+  background: #c61a1a;
+  border: 1px solid #991414;
 }
 .label.github {
-  background: #4183C4;
+  background: #4183c4;
+  border: 1px solid #3269a0;
 }
 .label.python {
-  background: #FFBC29;
+  background: #ffbc29;
+  border: 1px solid #f5a800;
 }
 .label.git {
-  background: #F14E32;
+  background: #f14e32;
+  border: 1px solid #e12e0f;
 }
 .label.javascript {
-  background: #F0DB4F;
+  background: #f0db4f;
+  border: 1px solid #ecd120;
 }
