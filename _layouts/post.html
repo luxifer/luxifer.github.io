@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="span2">
+<div class="span3">
   <div class="padding10 content aside">
     {% if page.date %}<small class="muted"><i class="icon-calendar"></i> Posté le {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</small><hr>{% endif %}
     <i class="icon-tags"></i> 
@@ -10,7 +10,7 @@ layout: default
     {% endfor %}
   </div>
 </div>
-<div class="span8 content">
+<div class="span6 content">
   <article class="padding10">
   {{ content }}
   </article>
@@ -55,7 +55,7 @@ layout: default
   {% endif %}
 </div>
 
-<div class="span2">
+<div class="span3">
   <div class="aside padding10 content">
     <h4>Related Posts</h4>
     <hr>
