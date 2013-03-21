@@ -51,6 +51,8 @@ $javascript: #F0DB4F;
 
 .label {
     border: 1px solid darken($grayLight, 10%);
+    display: inline-block;
+    margin: 1px;
 
     &.php {
         background: $php;
@@ -80,5 +82,15 @@ $javascript: #F0DB4F;
     &.javascript {
         background: $javascript;
         border: 1px solid darken($javascript, 10%);
+    }
+}
+
+ul.unstyled {
+    li {
+        border-bottom: 1px solid lighten($grayLight, 30%);
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
 }

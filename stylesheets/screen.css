@@ -7091,6 +7091,8 @@ pre code {
 
 .label {
   border: 1px solid gray;
+  display: inline-block;
+  margin: 1px;
 }
 .label.php {
   background: #7777aa;
@@ -7115,4 +7117,11 @@ pre code {
 .label.javascript {
   background: #f0db4f;
   border: 1px solid #ecd120;
+}
+
+ul.unstyled li {
+  border-bottom: 1px solid #e6e6e6;
+}
+ul.unstyled li:last-child {
+  border-bottom: none;
 }
