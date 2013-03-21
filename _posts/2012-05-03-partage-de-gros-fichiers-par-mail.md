@@ -2,7 +2,6 @@
 layout: post
 title: Partage de gros fichiers par mail
 tags:
-- Dev
 - dev
 - email
 - fichier

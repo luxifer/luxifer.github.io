@@ -94,3 +94,10 @@ ul.unstyled {
         }
     }
 }
+
+.navbar-inverse {
+    .navbar-inner {
+        background-image: url('/images/pw_maze_black.png');
+        background-repeat: repeat;
+    }
+}

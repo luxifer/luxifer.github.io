@@ -7125,3 +7125,8 @@ ul.unstyled li {
 ul.unstyled li:last-child {
   border-bottom: none;
 }
+
+.navbar-inverse .navbar-inner {
+  background-image: url("/images/pw_maze_black.png");
+  background-repeat: repeat;
+}

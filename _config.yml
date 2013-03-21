@@ -1,6 +1,6 @@
 # standard jekyll configuration
 
-permalink: date
+permalink: pretty
 exclude: ['Rakefile', 'config.rb']
 markdown: maruku
 pygments: true
