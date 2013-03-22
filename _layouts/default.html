@@ -9,6 +9,8 @@
     <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic|Lobster+Two:400,700,400italic|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />
     <link rel="stylesheet" media="screen" href="/stylesheets/solarizedlight.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/stylesheets/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" media="screen" href="/stylesheets/font-awesome-ie7.min.css" type="text/css">
     <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Blog de Florent Viel">
     {% if site.feedburner %}
     <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
@@ -69,7 +71,44 @@
         </div>
       </div>
       <div class="row">
-        {{ content }}
+        <div class="span3">
+          {% if page.date %}
+          <div class="padding10 content aside">
+            <small class="muted"><i class="icon-calendar"></i> Posté le {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</small><hr>
+            <i class="icon-tags"></i> 
+            {% for tag in page.tags %}
+            <span class="label {{ tag }}">{{ tag }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="span6 content">
+          {{ content }}
+        </div>
+        <div class="span3">
+          <div class="content aside padding10">
+            <h4>Florent Viel</h4>
+            <hr>
+            <img src="http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=220" class="img-polaroid" />
+            <br /><br />
+            <ul class="unstyled">
+              <li><a href="https://github.com/luxifer" target="_blank"><i class="icon-github"></i> Github</a></li>
+              <li><a href="https://twitter.com/florent_viel" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+              <li><a href="http://fr.linkedin.com/in/florentviel/" target="_blank"><i class="icon-linkedin"></i> Twitter</a></li>
+            </ul>
+          </div>
+          {% if site.related_posts %}
+          <div class="aside padding10 content">
+            <h4>Posts associés</h4>
+            <hr>
+            <ul class="unstyled">
+              {% for post in site.related_posts limit:5 %}
+                <li><small><a href="{{ post.url }}">{{ post.title }}</a><br /><small class="muted"> posté le {{ post.date | date_to_string }}</small></small></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
       </div>
     </div>
     <div id="fb-root"></div>
