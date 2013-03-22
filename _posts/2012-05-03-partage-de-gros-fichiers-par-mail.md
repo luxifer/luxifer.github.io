@@ -15,15 +15,7 @@ status: publish
 type: post
 published: true
 meta:
-  Hide SexyBookmarks: '0'
-  _edit_last: '2'
-  Hide OgTags: '0'
-  _shorten_url_bitly: http://j.mp/Kfu6KM
-  image: ''
-  embed: This is the default text
-  seo_follow: 'false'
-  seo_noindex: 'false'
-  _thumbnail_id: '366'
+  thumb: '/images/Capture-du-2012-05-03-163146-519x140.png'
   dsq_thread_id: '674319963'
 ---
 Bonjour,

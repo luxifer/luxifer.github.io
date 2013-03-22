@@ -8,7 +8,15 @@ title: Blog Posts
     <ul class="media-list">
       {% for post in paginator.posts %}
         <li class="media">
-          <h4><a href="{{ post.url }}">{{ post.title }}</a> <small class="muted">le {{ post.date | date_to_string }}</small></h4>
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <small class="muted">le {{ post.date | date_to_string }}</small>
+          {% if post.meta.thumb %}
+          <div class="img-polaroid">
+            <img src="{{ post.meta.thumb }}" />
+          </div>
+          {% endif %}
+          <br />
+          <a href="{{ post.url }}" class="btn btn-small">Continuer à lire <i class="icon-circle-arrow-right"></i></a>
         </li>
       {% endfor %}
     </ul>

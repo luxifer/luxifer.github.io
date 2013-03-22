@@ -20,16 +20,8 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  Hide SexyBookmarks: '0'
-  Hide OgTags: '0'
-  image: ''
-  embed: This is the default text
-  seo_follow: 'false'
-  seo_noindex: 'false'
-  _shorten_url_bitly: http://j.mp/I94R8Q
+  thumb: '/images/Capture-du-2012-04-25-161150-519x140.png'
   dsq_thread_id: '663485541'
-  _thumbnail_id: '361'
 ---
 Bonjour à tous!
 

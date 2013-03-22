@@ -75,7 +75,7 @@
           {% if page.date %}
           <div class="padding10 content aside">
             <small class="muted"><i class="icon-calendar"></i> Posté le {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</small><hr>
-            <i class="icon-tags"></i> 
+            <i class="icon-tags"></i> Tags<br />
             {% for tag in page.tags %}
             <span class="label {{ tag }}">{{ tag }}</span>
             {% endfor %}
@@ -94,7 +94,7 @@
             <ul class="unstyled">
               <li><a href="https://github.com/luxifer" target="_blank"><i class="icon-github"></i> Github</a></li>
               <li><a href="https://twitter.com/florent_viel" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
-              <li><a href="http://fr.linkedin.com/in/florentviel/" target="_blank"><i class="icon-linkedin"></i> Twitter</a></li>
+              <li><a href="http://fr.linkedin.com/in/florentviel/" target="_blank"><i class="icon-linkedin"></i> Linked'in</a></li>
             </ul>
           </div>
           {% if site.related_posts %}
@@ -111,17 +111,9 @@
         </div>
       </div>
     </div>
-    <div id="fb-root"></div>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=281979341814266";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     <script type="text/javascript">
       window.___gcfg = {lang: 'fr'};
 
