@@ -28,7 +28,7 @@ meta:
 Bonjour à tous!
 
 Ce matin je faisais un peu de R&amp;D au bureau pour savoir comment récupérer des mails d'un compte et sauvegarder les pièces jointes et les traiter plus tard. Après un peu de recherche sur google et twitter, je suis d'abord tombé sur [IMAP](http://fr.php.net/manual/fr/book.imap.php "IMAP"). Et un peu après sur une classe publiée sur le site [phpclasses](http://www.phpclasses.org/package/2964-PHP-Retrieve-attachments-from-messages-in-a-mailbox.html "PHPClasses"). La classe marche plutôt pas mal, sauf quelques petits problèmes. Tout d'abord les fichiers utilisent les `short_open_tag` de PHP, beaucoup de warnings sont levés si les messages traités ne contiennent pas de pièces jointes et enfin des paramètres passés à certaines fonctions sont notés comme constantes, comme par exemple le mode d'ouverture de fichier de la fonction `fopen`.
-
+<!--break-->
 Bref, après plusieurs essais et modifications de mon côté, j'ai transformé cette classe en full objet, documentée et ajouter quelques conditions de gestion d'erreurs.
 
 {% highlight php %}

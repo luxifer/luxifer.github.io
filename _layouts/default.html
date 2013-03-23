@@ -63,14 +63,6 @@
     </header>
     <div class="container">
       <div class="row">
-        <div class="span6 offset3 content">
-          {% if page.title %}
-          <h1 class="text-center">{{ page.title }}</h1>
-          <hr>
-          {% endif %}
-        </div>
-      </div>
-      <div class="row">
         <div class="span3">
           {% if page.date %}
           <div class="padding10 content aside">
@@ -83,6 +75,10 @@
           {% endif %}
         </div>
         <div class="span6 content">
+          {% if page.title %}
+          <h1 class="text-center">{{ page.title }}</h1>
+          <hr>
+          {% endif %}
           {{ content }}
         </div>
         <div class="span3">

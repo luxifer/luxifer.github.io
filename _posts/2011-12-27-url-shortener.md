@@ -33,7 +33,7 @@ Salut à tous,
 Voulant me remettre petit à petit dans le framework django de python, je me suis dit que j'allais développer un petit projet. C'est la que j'ai eu l'idée de créer mon propre raccourciceur d'URL. Pourquoi faire me diriez vous? Tout simplement pour la performance, je sais très bien que sur le web ce n'est pas ce qui manque comme service, mais j'avais envie d'essayer.
 
 Le code source du projet est sous licence GPL V3 et est disponible sur github : [https://github.com/LuXiFeR/UrliZr](https://github.com/LuXiFeR/UrliZr)
-
+<!--break-->
 J'ai commencé par simplement faire un générateur d'identifiant unique en python :
 {% highlight python %}
 import string

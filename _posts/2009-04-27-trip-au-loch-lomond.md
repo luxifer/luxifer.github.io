@@ -14,7 +14,7 @@ meta:
 Salut,
 
 Après ce long moment d'bsence, je reviens en force ! Ce week end je suis parti avec deux amis au loch Lomond et au Trossachs National Park, qui est juste à côté.
-
+<!--break-->
 **Début de la journée**
 La journée a commencé à 9h00 après un réveil assez difficile, dû à la soirée de la veille. Le rendez-vous était donné à 9h30 devant la gare de Paisley. Le ticket aller-retour pour Balloch, qui est la ville en bas du loch nous a coûté £5.35. Ce qui reste relativement abordable, quand on sait que c'est une etreprise privée. Donc nous partons pour Glasgow, où il y a un changement de gare à faire. Arrivée à Glasgow, nous allons à Queen Street pour attendre notre train qui est à 10h23. Le voyage en train se passe bien, et nous arrivons à Balloch à 11h10. Et là grande surprise, le beau temps est avec nous. N'étant pas encore réveillé, c'est l'heure de prendre un café.
 

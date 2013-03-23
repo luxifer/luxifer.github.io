@@ -40,7 +40,7 @@ pre {
 
 .aside {
     border-top: 5px solid #5e777d;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 $php: #7777AA;
@@ -101,4 +101,8 @@ ul.unstyled {
         background-image: url('/images/pw_maze_black.png');
         background-repeat: repeat;
     }
+}
+
+.heading {
+    min-height: 132px;
 }

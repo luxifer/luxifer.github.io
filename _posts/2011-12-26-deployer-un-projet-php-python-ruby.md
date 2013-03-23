@@ -23,7 +23,7 @@ meta:
   _shorten_url_bitly: http://j.mp/J3uCec
 ---
 Je me suis penché sur divers framework de développement web, notamment en python, ruby et php. J'ai pu tester Django, Ruby on Rails, Symfony et actuellement Symfony 2. L'avantage d'utiliser un framework c'est la possibilité de structurer son code, de le rendre évolutif et de laisser la possibilité à d'autres contributeurs de comprendre ce qu'on écrit. Tout ça c'est bien sympa mais ce n'est pas le but de ce billet.
-
+<!--break-->
 Le but de mon billet c'est de parler du déploiement d'un projet. Parce que le développement c'est plutôt simple. Django et Ruby on Rails proposent un built-in server, pour php il suffit de créer un virtual host dans apache et c'est parti. Bref rien de bien méchant. La où ça se complique c'est quand tu veux déployer ton projet sur un serveur de production. Il y a la solution simple qui consiste a utiliser Heroku, mais la exit le PHP. Et de plus on a pas tous les moyens de déployer un projet sur cette solution.
 
 Donc la solution qui nous reste c'est la bonne vieille méthode, c'est à dire un serveur dédié. Pour du PHP aucun soucis, tu définis tes entrées et tes domaines sur ton DNS, tu crée ton virtual host apache qui pointe vers le dossier du projet, tu définis les accès à la base de donnée et Zou! C'est déployé. Résultat des courses entre le rsync de copie du projet sur le dédié et le moment de taper l'adresse dans la barre du navigateur ça a pris 15 minutes. Un jeu d'enfant.

@@ -24,7 +24,7 @@ meta:
 Bonjour,
 
 Je sais que je vous ai manqué. Et bien vous allez être gâtés. C'est quand même assez important de faire ses courses, pour manger, mais bon c'est un détail. Donc qu'est-ce qui change par rapport à la France ? Et bien pas mal de choses.
-
+<!--break-->
 Premièrement il y a plusieurs centre commerciaux dans Paisley dont un LIDL (enfin quelque chose de connu). Le but n'étant pas de faire de la pub, je ne citerai pas d'autres noms. Il y a deux grandes zones commerciales, une qui s'appelle la Piazza, et l'autre Paisley Centre. Et bien sûr dans chacune de ces zones commerciales, il y a un supermarché. Je vais généralement à celui de la Piazza, car c'est moins cher.
 
 Donc j'arrive dans le supermarché, et en apparence ça ne change pas beaucoup. Il y a un rayon fruits et légumes, ensuite on arrive devant un grand rayon avec moulte choix de pain de mie (et en plus il est bon le pain de mie ici). Mais ça se complique quand je veux acheter ce que je mange d'habitude quand je suis en France, c'est à dire des pâtes et du riz (pas très varié vous me direz mais c'est bon). Donc une fois que j'ai trouvé le petit rayon, aucune marques connues, que des pâtes "génériques" (c'est pas des médicaments quand même). Bon je me dit on va tester voir ce que ça donne. Et finalement c'est pas trop mal. Pour ce qui est du riz, impossible de trouver autre chose que du Uncle Ben's. Va pour cette marque alors, il est bon mais un peu cher.

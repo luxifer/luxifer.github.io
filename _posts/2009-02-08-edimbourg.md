@@ -19,7 +19,7 @@ meta:
 Bonjour,
 
 Un transport pour une journée à Edimbourg était offert aux nouveaux étudiants hier. Je m'y suis donc rendu étant donné que c'était gratuit.
-
+<!--break-->
 **Le transport**
 Tout d'abord nous avions rendez-vous à 10h devant la statue qui est à l'entrée de l'université. Deux cars étaient prévus pour le transport. Nous sommes partis vers 10h15 en direction de Edimbourg. Pendant ce trajet nous avons eu une carte de la ville ainsi qu'un polycopié sur lequel on trouvait par exemple la liste des choses à voir. Le trajet à duré à peu près 1h20. J'ai essayé de me reposer un maximum, car la veille j'étais aller à la soirée d'intégration. Malheureusement c'était difficile avec les cinq filles juste à côté de moi qui ne faisait que glousser. Mis à part ça tout s'est bien passé.
 

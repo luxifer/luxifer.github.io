@@ -22,7 +22,7 @@ meta:
 Bonjour,
 
 Ça fait longtemps que je n'ai pas posté de billet. Bah c'est parce que je n'avais pas grand chose à raconter. Mais Mardi c'était la Saint Patrick's Day, et donc la bière coulait à flot. Surtout la Guinness.
-
+<!--break-->
 ![Verre de Guinness vide, et flyer pour un jeu spécial](/images/16032009115-300x225.jpg "Guinness's glass")
 
 Je suis donc allé à Glasgow avec Vincent et 5 potes français. Nous sommes allé dans un pub qui s'appelle Waxy O'Connors. Pub irlandais, avec une décoration intérieure magnifique. Mais je n'ai pas pris de photo il faisait trop noir, et beaucoup trop de monde. Le pub est sur 3 étages, avec 2 bars pour le service.
