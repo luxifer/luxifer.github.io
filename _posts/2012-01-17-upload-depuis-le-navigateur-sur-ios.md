@@ -21,19 +21,9 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  Hide SexyBookmarks: '0'
-  Hide OgTags: '0'
+  thumb: '/images/Capture-du-2012-02-08-130518-519x140.png'
   dsq_thread_id: '542472107'
-  image: ''
-  embed: This is the default text
-  seo_follow: 'false'
-  seo_noindex: 'false'
-  _thumbnail_id: '298'
-  _shorten_url_bitly: http://j.mp/y31ljV
 ---
-![](/images/picup-app.png)
-
 Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur les différents choix faits par Apple concernant iOS. Je ne parlerai que d'un seul point car mon but n'est pas de créer un troll mais de partager la solution que j'ai trouvé pour pallier à ce problème.
 
 Je ne sais pas si vous le savez, mais sur iPhone, iPod et iPad il est impossible de cliquer sur le bouton parcourir d'un formulaire sur une pag web pour joindre un fichier. Celui-ci est tout simplement grisé... On ne peut pas accéder a son arborescence de fichier depuis le navigateur safari sur iOS. Ceci est du au fait que ce système d'exploitation, chaque application possède son propre système de fichier et ne peut pas accéder au contenu d'une autre application. Je ne comprend pas le choix des développeurs Apple sur ce point là. Pourquoi brider l'expérience web mobile et de forcer à passer à des applications tierces pour pallier à ce problème.
@@ -67,3 +57,5 @@ Voilà voilà ;)
 Edit:
 
 J'ai modifié le fichier javascript a inclure à son site, en utilisant le helper de la même manière, si l'application Picup n'est pas installée le visiteur est dirigé vers l'appstore.
+
+![](/images/picup-app.png)

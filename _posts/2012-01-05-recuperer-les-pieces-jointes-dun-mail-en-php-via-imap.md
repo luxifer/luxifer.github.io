@@ -13,17 +13,8 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  Hide SexyBookmarks: '0'
-  Hide OgTags: '0'
-  image: ''
-  embed: This is the default text
-  seo_follow: 'false'
-  seo_noindex: 'false'
+  thumb: '/images/keyboard_by_Dmaghar-519x140.jpg'
   dsq_thread_id: '527590055'
-  _wp_old_slug: reuperer-les-pieces-jointes-dun-mail-en-php-via-imap
-  _thumbnail_id: '259'
-  _shorten_url_bitly: http://j.mp/x863rZ
 ---
 Bonjour à tous!
 

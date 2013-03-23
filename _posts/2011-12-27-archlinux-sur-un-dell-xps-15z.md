@@ -15,22 +15,8 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  _lacands_meta_show: '1'
-  ci_post_tutorial: ''
-  ci_post_demo_link: ''
-  ci_post_download_link: ''
-  ci_post_level: ''
-  ci_post_duration: ''
-  ci_post_description: ''
-  Hide SexyBookmarks: '0'
-  Hide OgTags: '0'
+  thumb: '/images/2011-08-10-19.39.31-519x140.jpg'
   dsq_thread_id: '517529089'
-  image: ''
-  embed: This is the default text
-  seo_follow: 'false'
-  seo_noindex: 'false'
-  _shorten_url_bitly: http://j.mp/IZX8xm
 ---
 Salut à tous ;)
 
