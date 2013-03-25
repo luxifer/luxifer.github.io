@@ -2,7 +2,13 @@
 layout: default
 ---
 <article class="padding10">
-{{ content }}
+  {% if page.meta.thumb %}
+  <div class="img-polaroid">
+    <img src="{{ page.meta.thumb }}" />
+  </div>
+  <br />
+  {% endif %}
+  {{ content }}
 </article>
 
 <div class="row-fluid padding10">
