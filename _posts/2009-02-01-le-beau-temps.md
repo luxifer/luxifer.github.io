@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Le beau temps
+date: 2009-02-01 19:14:38
 tags:
 - beau
 - paisley
@@ -11,8 +12,7 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  _shorten_url_bitly: http://j.mp/HR84wq
+  thumb: '/images/01022009066-519x140.jpg'
   dsq_thread_id: '670449708'
 ---
 Bonjour,

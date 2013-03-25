@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 1er jour à Paisley
+date: 2009-01-31 23:16:47
 tags:
 - accent
 - chambre
@@ -14,8 +15,7 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  _shorten_url_bitly: http://j.mp/IRswgj
+  thumb: '/images/29012009050-519x140.jpg'
   dsq_thread_id: '670409174'
 ---
 Bonjour,

@@ -7,9 +7,8 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
+  thumb: '/images/25042009229-519x140.jpg'
   dsq_thread_id: '516602280'
-  _shorten_url_bitly: http://j.mp/HVFpoH
 ---
 Salut,
 

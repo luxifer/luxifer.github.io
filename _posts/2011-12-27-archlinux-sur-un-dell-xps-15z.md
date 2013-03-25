@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ArchLinux sur un Dell XPS 15z
+date: 2011-12-27 10:36:06
 tags:
 - 15z
 - archlinux

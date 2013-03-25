@@ -15,8 +15,7 @@ status: publish
 type: post
 published: true
 meta:
-  _edit_last: '2'
-  _shorten_url_bitly: http://j.mp/HREebe
+  thumb: '/images/20032009122-519x140.jpg'
   dsq_thread_id: '675693717'
 ---
 Bonjour,
