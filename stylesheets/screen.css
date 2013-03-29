@@ -7135,3 +7135,7 @@ ul.unstyled li:last-child {
 .heading {
   min-height: 132px;
 }
+
+footer {
+  background: #eee;
+}

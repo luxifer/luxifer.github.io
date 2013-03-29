@@ -71,7 +71,7 @@
             <div class="img-polaroid">
               <img src="http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=220" />
             </div>
-            <br /><br />
+            <br />
             <ul class="unstyled">
               <li><a href="http://github.com/luxifer" target="_blank"><i class="icon-github"></i> Github</a></li>
               <li><a href="http://twitter.com/florent_viel" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
@@ -110,6 +110,19 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span3">
+            <ul class="unstyled">
+            {% for post in  site.posts limit:5 %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
