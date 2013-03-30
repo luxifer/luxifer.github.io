@@ -108,5 +108,13 @@ ul.unstyled {
 }
 
 footer {
-    background: #eee;
+    border-top: 5px solid #5e777d;
+    background-image: url('/images/escheresque.png');
+    padding: 20px 0;
+    a {
+        color: #333;
+    }
+    .span4 {
+        padding: 0 10px;
+    }
 }

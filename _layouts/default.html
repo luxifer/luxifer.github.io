@@ -55,7 +55,7 @@
                 <li><a href="http://florentviel.com" target="_blank">CV</a></li>
               </ul>
               <ul class="nav pull-right">
-                <li><a href="/feed.xml">RSS</a></li>
+                <li><a href="/atom.xml">RSS</a></li>
               </ul>
             </div>
           </div>
@@ -113,10 +113,26 @@
     <footer>
       <div class="container">
         <div class="row-fluid">
-          <div class="span3">
+          <div class="span4">
+            <h4>Dernières publications</h4>
             <ul class="unstyled">
             {% for post in  site.posts limit:5 %}
               <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="span4">
+            <h4>Liens</h4>
+            <ul class="unstyled">
+              <li><a href="/sitemap.xml">Plan du site</a></li>
+              <li><a href="/atom.xml">RSS</a></li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h4>Pages</h4>
+            <ul class="unstyled">
+            {% for page in  site.pages %}
+              <li><a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
             </ul>
           </div>
