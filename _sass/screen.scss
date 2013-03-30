@@ -117,4 +117,9 @@ footer {
     .span4 {
         padding: 0 10px;
     }
+    ul.unstyled {
+        li {
+            border-bottom: 1px solid $grayLight;
+        }
+    }
 }
