@@ -13,6 +13,7 @@ author: Florent Viel
 email: florent.viel69@gmail.com
 include: [images,font]
 paginate: 5
+lsi: false
 
 # configuration for ehancements, uncomment to enable
 

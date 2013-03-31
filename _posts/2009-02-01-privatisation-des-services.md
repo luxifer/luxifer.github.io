@@ -20,8 +20,10 @@ meta:
 Bonjour,
 
 La première chose que je remarque en arrivant à Paisley, c'est que tous les services qui sont publics en France sont privés ici. Comme par exemple la police, les transports en communs, les pompiers, ... Tout, absolument tout est privatisé en Ecosse. Et croyez moi c'est la galère.
+
 <!--break-->
-**Les bus**
+
+### Les bus
 
 Commençons par les bus. C'est la partie la plus importante de ce billet. J'ai donc voulu prendre le bus pour rejoindre l'autre résidence étudiante de la ville pour rejoindre Sophie. Et je me suis aperçu qu'il y avait beaucoup de bus, ça c'est un fait, mais il y a aussi plusieurs entreprises qui gèrent les bus, alors qu'en France, il y a une seule entreprise par ville ; par exemple TCL à Lyon ou RATP à Paris. De ce fait ça devient plus dur de se retrouver sachant que les bus ne s'arrêtent pas tous aux mêmes arrêts de bus, et que sur les arrêts de bus il n'y a pas tous les bus qui s'y arrêtent qui sont notés. Joyeux bordel.
 
@@ -31,7 +33,7 @@ J'arrive enfin à cette résidence, on est samedi, donc l'accueil est fermé. Il
 
 Le dernier point sur les bus est que suivant les entreprises qui gèrent ces bus, le tarif n'est pas le même. Ainsi il m'en a coûté £1.50 pour l'aller et £1.10 pour le retour... Comme quoi la privatisation n'a pas que des bons côtés.
 
-**La police**
+### La police
 
 Je me suis aussi rendu à la police, car je ne trouvais pas d'autres moyens de trouver mon chemin. Arrivé dans le hall d'entrée, je vois un magnifique bureau en bois, tout est bien propre, on se croirait à l'entrée d'un hôtel luxueux. Et non c'est les bureaux de la police. Deuxième chose que je remarque c'est que les policiers qui nous ont accueillit gardent leur gilet pare-balle dans les bureaux. Encore une preuve de la paranoïa des britanniques.
 

@@ -13,11 +13,15 @@ meta:
 Salut,
 
 Après ce long moment d'bsence, je reviens en force ! Ce week end je suis parti avec deux amis au loch Lomond et au Trossachs National Park, qui est juste à côté.
+
 <!--break-->
-**Début de la journée**
+
+### Début de la journée
+
 La journée a commencé à 9h00 après un réveil assez difficile, dû à la soirée de la veille. Le rendez-vous était donné à 9h30 devant la gare de Paisley. Le ticket aller-retour pour Balloch, qui est la ville en bas du loch nous a coûté £5.35. Ce qui reste relativement abordable, quand on sait que c'est une etreprise privée. Donc nous partons pour Glasgow, où il y a un changement de gare à faire. Arrivée à Glasgow, nous allons à Queen Street pour attendre notre train qui est à 10h23. Le voyage en train se passe bien, et nous arrivons à Balloch à 11h10. Et là grande surprise, le beau temps est avec nous. N'étant pas encore réveillé, c'est l'heure de prendre un café.
 
-**Début de la visite**
+### Début de la visite
+
 Nous commençons par prendre le sentier sur la rive droite du lac, pour aller profiter de la vue du château.
 
 ![Vue du château](/images/25042009225-300x225.jpg "25042009225")
@@ -36,7 +40,8 @@ Après ce repas, nous décidons de faire une petite marche sur la rive gauche du
 
 Après cette petite ballade dans le parc, nous commençons à être un peu fatigué, il est donc temps de rentrer sur Paisley.
 
-**Retour à Paisley**
+### Retour à Paisley
+
 Nous arrivons pile poil à l'heure à la gare pour prendre le train pour Glasgow. Arrivée à Paisley vers 18h30, il est temps de prendre une bière bien méritée, car nous n'avions pas pensé à prendre de l'eau, et étant donné que nous avons seulement bu un coca au restaurant, la gorge se fait sèche.
 
 Après cette bonne petite journée, et cette bonne petite visite, le prochain trip c'est pour les Highland et le Loch Ness. Promis je ramène une photo de Nessie.
