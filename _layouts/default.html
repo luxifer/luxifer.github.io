@@ -7,7 +7,7 @@
     {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Poly:400,400italic|Lobster+Two:400,700,400italic|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poly|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />
     <link rel="stylesheet" media="screen" href="/stylesheets/solarizedlight.css" type="text/css" />
     <link rel="stylesheet" media="screen" href="/stylesheets/font-awesome.min.css" type="text/css">
@@ -115,6 +115,7 @@
         <div class="row-fluid">
           <div class="span4  php">
             <h4>Dernières publications</h4>
+            <hr>
             <ul class="unstyled">
             {% for post in  site.posts limit:5 %}
               <li><a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -123,6 +124,7 @@
           </div>
           <div class="span4 python">
             <h4>Liens</h4>
+            <hr>
             <ul class="unstyled">
               <li><a href="/sitemap.xml">Plan du site</a></li>
               <li><a href="/atom.xml">RSS</a></li>
@@ -130,6 +132,7 @@
           </div>
           <div class="span4 ruby">
             <h4>Pages</h4>
+            <hr>
             <ul class="unstyled">
               <li><a href="/a-propos/">A propos</a></li>
             </ul>
