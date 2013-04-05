@@ -7126,6 +7126,32 @@ ul.unstyled li:last-child {
 .navbar-inverse .navbar-inner {
   background-image: url("/images/pw_maze_black.png");
   background-repeat: repeat;
+  border-bottom: 5px solid #1c2426;
+}
+
+.navbar .nav li {
+  transition: all .3s;
+  -moz-transition: all .3s;
+  /* Firefox 4 */
+  -webkit-transition: all .3s;
+  /* Safari and Chrome */
+  -o-transition: all .3s;
+  /* Opera */
+}
+.navbar .nav li:hover {
+  box-shadow: inset 0 0 5px 0 rgba(94, 119, 125, 0.3);
+}
+.navbar .brand {
+  transition: all .3s;
+  -moz-transition: all .3s;
+  /* Firefox 4 */
+  -webkit-transition: all .3s;
+  /* Safari and Chrome */
+  -o-transition: all .3s;
+  /* Opera */
+}
+.navbar .brand:hover {
+  box-shadow: inset 0 0 5px 0 rgba(94, 119, 125, 0.3);
 }
 
 .heading {

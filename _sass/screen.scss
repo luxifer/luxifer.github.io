@@ -92,6 +92,30 @@ ul.unstyled {
     .navbar-inner {
         background-image: url('/images/pw_maze_black.png');
         background-repeat: repeat;
+        border-bottom: 5px solid darken($linkColor, 30%);
+    }
+}
+
+.navbar {
+    .nav {
+        li {
+            transition: all .3s;
+            -moz-transition: all .3s; /* Firefox 4 */
+            -webkit-transition: all .3s; /* Safari and Chrome */
+            -o-transition: all .3s; /* Opera */
+            &:hover {
+                box-shadow: inset 0 0 5px 0 rgba($linkColor,0.3);
+            }
+        }
+    }
+    .brand {
+        transition: all .3s;
+        -moz-transition: all .3s; /* Firefox 4 */
+        -webkit-transition: all .3s; /* Safari and Chrome */
+        -o-transition: all .3s; /* Opera */
+        &:hover {
+            box-shadow: inset 0 0 5px 0 rgba($linkColor,0.3);
+        }
     }
 }
 
