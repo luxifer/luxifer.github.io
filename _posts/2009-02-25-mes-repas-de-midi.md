@@ -33,7 +33,7 @@ En ce moment je ne donne pas beaucoup de nouvelles, ce n'est pas parce que je n'
 
 Qu'est-ce qui se cache derrière ce nom bizarre et imprononçable ? Et bien une boisson énergétique au goût de médicament et de couleur orange fluo. Une petite photo pour voir de quoi ça à l'air.
 
-![Boisson énergétique typiquement écossaise](http://luxifer.fr/upload/24022009107.jpg "IrnBru")
+![Boisson énergétique typiquement écossaise](/images/650x/24022009107.jpg "IrnBru")
 
 Donc petite description de ce qu'il y a à l'intérieur : de l'eau gazeuse, du sucre, de l'acide citrique, des parfums contenant de la cafféine et de la quinine, des conservateurs et des colorants. On en sait pas plus car "Bru'd in Scotland to a secret recipe for over 100 years". Comme vous l'aurez compris, la recette est secrète. Tout ce qu'il y a à dire, c'est que c'est pas mauvais et que ça donne la pêche.
 
