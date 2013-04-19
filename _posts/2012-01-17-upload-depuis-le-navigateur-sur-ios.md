@@ -21,7 +21,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/Capture-du-2012-02-08-130518-519x140.png'
+  thumb: '/images/640x140/Capture-du-2012-02-08-130518.png'
   dsq_thread_id: '542472107'
 ---
 Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur les différents choix faits par Apple concernant iOS. Je ne parlerai que d'un seul point car mon but n'est pas de créer un troll mais de partager la solution que j'ai trouvé pour pallier à ce problème.
@@ -58,4 +58,4 @@ Edit:
 
 J'ai modifié le fichier javascript a inclure à son site, en utilisant le helper de la même manière, si l'application Picup n'est pas installée le visiteur est dirigé vers l'appstore.
 
-![](/images/picup-app.png)
+![](/images/650x/picup-app.png)

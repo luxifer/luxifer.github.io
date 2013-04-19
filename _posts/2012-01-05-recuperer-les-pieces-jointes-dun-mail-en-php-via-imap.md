@@ -13,7 +13,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/keyboard_by_Dmaghar-519x140.jpg'
+  thumb: '/images/640x140/keyboard_by_Dmaghar.jpg'
   dsq_thread_id: '527590055'
 ---
 Bonjour à tous!

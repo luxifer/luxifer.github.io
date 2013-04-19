@@ -7181,3 +7181,7 @@ footer .span4.ruby {
 footer ul.unstyled li {
   border: none;
 }
+
+.media hr {
+  margin-bottom: 0;
+}

@@ -15,7 +15,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/29012009050-519x140.jpg'
+  thumb: '/images/640x140/29012009050.jpg'
   dsq_thread_id: '670409174'
 ---
 Bonjour,
@@ -37,7 +37,7 @@ Je me rend donc à cette résidence, qui, soit dit en passant, est à environ 10
 
 Ça y est j'y suis enfin arrivé ! Ce fut long mais limpide et je peux enfin m'installer tranquillement. La première surprise est qu'il n'y a pas d'oreiller, alors que sur la check-liste il fallait seulement emmener une taie d'oreiller. Bon passons car c'est la seule mauvaise surprise.
 
-![Comme vous le voyez je suis plutôt bien installé](/images/29012009045-300x225.jpg "Le bureau")
+![Comme vous le voyez je suis plutôt bien installé](/images/650x/29012009045.jpg "Le bureau")
 
 Je prend donc mon temps pour m'installer un configurer l'accès internet par le wifi. En parlant du wifi j'ai du me rendre à l'université pour finaliser la configuration car le polycopier que m'a passé la réceptionniste est incomplet. Bref petit incident de parcours sans envergure. Je finit donc de m'installer et commence à prendre contact et donner les premières nouvelles à tout le monde.
 
@@ -45,7 +45,7 @@ Je prend donc mon temps pour m'installer un configurer l'accès internet par le 
 
 Une fois installé je décidé de faire un tour de la résidence afin voir la cuisine et la salle de bain commune. La salle de bain est nickel, mais l'état de la cuisine c'est autre chose. C'est crade, il y plein de poussière partout, les plaques de cuissons sont sales, et le nécessaire de cuisine est au bord de la ruine...
 
-![On ne voit pas grand chose, mais ça donne un apect général de la cuisine](/images/29012009050-300x225.jpg "Aperçu de la cuisine")
+![On ne voit pas grand chose, mais ça donne un apect général de la cuisine](/images/650x/29012009050.jpg "Aperçu de la cuisine")
 
 Heureusement que je ne reste dans la cuisine que pour manger. On peut dire que c'est la grosse surprise de la journée.
 

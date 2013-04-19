@@ -17,7 +17,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/2378867408_5d2ac25d2f_o-519x140.jpg'
+  thumb: '/images/640x140/2378867408_5d2ac25d2f_o.jpg'
   dsq_thread_id: '567526946'
 ---
 Salut à tous! Ajourd'hui on va parler webperf et notamment temps de chargement des pages. Quand on développe en javascript on utilise souvent jQuery comme framework qui assure la compatibilité de son application sur presque tous les navigateurs. Qui simplifie certains fonctionnement, etc. Et souvent quand on utilise ce framework on ne prend pas la peine de redévelopper l'existant, on va chercher un plugin. Et forcément au final on se retrouve avec l'inclusion de 15 javascripts par page ce qui ralenti considérablement le temps de chargement. Je fais la passe sur la configuration du serveur web, on va considéré que de ce côté là la durée d'expiration est précisée, la compression activée, etc. Reste que même si la requête est faite sur le cache du navigateur, ça fait quand même une requête.
