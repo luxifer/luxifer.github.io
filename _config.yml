@@ -20,8 +20,8 @@ lsi: false
 # feedburner:
 #   id: feedburnerid
 
-# google_analytics:
-#   account: UA-XXXXX-X
+google_analytics:
+  account: UA-438897-2
 
 disqus:
   id: luxifer
