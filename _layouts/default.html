@@ -5,6 +5,9 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="{% if page.meta.thumb %}http://{{ site.domain }}{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Poly|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -65,17 +68,18 @@
     <div class="container">
       <div class="row">
         <div class="span2">
-          <div class="content aside padding10">
-            <h4>Florent Viel</h4>
+          <div class="content aside padding10" itemscope itemtype="http://data-vocabulary.org/Person">
+            <h4 itemprop="name">Florent Viel</h4>
             <hr>
             <div class="img-polaroid">
-              <img src="http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=140" />
+              <img src="http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=140" itemprop="photo" />
             </div>
             <br />
             <ul class="unstyled">
-              <li><a href="http://github.com/luxifer" target="_blank"><i class="icon-github"></i> Github</a></li>
-              <li><a href="http://twitter.com/florent_viel" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
-              <li><a href="http://fr.linkedin.com/in/florentviel/" target="_blank"><i class="icon-linkedin"></i> Linked'in</a></li>
+              <li><a href="https://github.com/luxifer" target="_blank"><i class="icon-github"></i> Github</a></li>
+              <li><a href="https://twitter.com/florent_viel" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
+              <li><a href="https://fr.linkedin.com/in/florentviel/" target="_blank"><i class="icon-linkedin"></i> Linked'in</a></li>
+              <li><a href="https://plus.google.com/u/1/110279340797376178645" target="_blank" rel="author"><i class="icon-google-plus"></i> Google+</a></li>
             </ul>
           </div>
         </div>
