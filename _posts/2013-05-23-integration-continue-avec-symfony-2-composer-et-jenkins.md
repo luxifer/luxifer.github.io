@@ -93,6 +93,8 @@ Dans ce fichier on liste les tâches à exécuter si la variable d'environement 
 Ensuite pour définir cette variable d'environnement, il faut rajouter ceci dans son fichier `phpunit.xml.dist`
 
 {% highlight xml %}
+<!-- app/phpunit.xml.dist -->
+
 <php>
     <env name="BOOTSTRAP_DB_ENV" value="test"/>
 </php>
