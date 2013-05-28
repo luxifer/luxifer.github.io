@@ -3,6 +3,7 @@ layout: post
 title: "Intégration continue avec Symfony 2, Composer et Jenkins"
 description: ""
 category: 
+published: false
 tags:
 - dev
 - php
