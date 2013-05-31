@@ -29,21 +29,6 @@ Symfony permet de créer différents environnements, typiquement `dev` et `prod`
 {% highlight yaml %}
 # app/config_test.yml
 
-imports:
-    - { resource: config_dev.yml }
-
-framework:
-    test: ~
-    session:
-        storage_id: session.storage.mock_file
-
-web_profiler:
-    toolbar: false
-    intercept_redirects: false
-
-swiftmailer:
-    disable_delivery: true
-
 doctrine:
     dbal:
         driver:     pdo_sqlite
