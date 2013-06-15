@@ -12,7 +12,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/jekyll.png'
+  thumb: 'jekyll.png'
 ---
 Bonjour,
 

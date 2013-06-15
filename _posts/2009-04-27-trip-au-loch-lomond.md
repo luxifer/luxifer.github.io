@@ -7,7 +7,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/25042009229.jpg'
+  thumb: '25042009229.jpg'
   dsq_thread_id: '516602280'
 ---
 Salut,

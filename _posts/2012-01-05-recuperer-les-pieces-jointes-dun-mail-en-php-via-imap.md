@@ -13,7 +13,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/keyboard_by_Dmaghar.jpg'
+  thumb: 'keyboard_by_Dmaghar.jpg'
   dsq_thread_id: '527590055'
 ---
 Bonjour à tous!
@@ -298,7 +298,6 @@ $login=""; //imap login
 $password=""; //imap password
 $savedirpath="./" ; // attachement will save in same directory where scripts run othrwise give abs path
 $jk=new MailAttachmentManager($host, $login, $password, $savedirpath); // Creating instance of class####
-?>
 {% endhighlight %}
 
 N'hésitez pas a commenter ou faire des suggestions par rapport au code. Prochaine étape trouver un moyen de sécuriser la boite mail qui va recevoir les pièces jointes pour les attacher à un utilisateur d'un site. Un peu comme Flickr qui permet d'ajouter des photos à son stream par mail.

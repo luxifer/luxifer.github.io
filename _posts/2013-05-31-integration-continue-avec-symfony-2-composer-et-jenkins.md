@@ -11,7 +11,7 @@ tags:
 - composer
 - jenkins
 meta:
-  thumb: '/images/640x140/ci.png'
+  thumb: 'ci.png'
 ---
 Bonjour,
 
