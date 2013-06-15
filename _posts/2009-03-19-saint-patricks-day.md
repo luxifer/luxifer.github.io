@@ -4,13 +4,8 @@ title: Saint Patrick's Day
 tags:
 - bar
 - glasgow
-- irlandais
 - irlande
-- patrick
-- Premiers jours
 - pub
-- saint
-- union
 status: publish
 type: post
 published: true

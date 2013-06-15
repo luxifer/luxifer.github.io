@@ -3,13 +3,8 @@ layout: post
 title: 1er jour à Paisley
 date: 2009-01-31 23:16:47
 tags:
-- accent
 - chambre
-- cuicise
 - Premiers jours
-- résidence
-- sale
-- saleté
 - service
 status: publish
 type: post

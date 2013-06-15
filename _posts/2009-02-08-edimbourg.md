@@ -3,8 +3,6 @@ layout: post
 title: Edimbourg
 tags:
 - edimbourg
-- hard rock café
-- université
 - Vie quotidienne
 - visite
 - whisky

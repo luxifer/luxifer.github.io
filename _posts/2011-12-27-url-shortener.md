@@ -5,9 +5,7 @@ date: 2011-12-27 22:14:39
 tags:
 - Dev
 - django
-- git
 - python
-- raccourci
 - url
 status: publish
 type: post

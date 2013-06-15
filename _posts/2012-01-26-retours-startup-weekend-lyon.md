@@ -2,14 +2,11 @@
 layout: post
 title: Retours Startup Weekend Lyon
 tags:
-- entreprenership
 - entrepreneur
 - lyon
-- Party
 - pitch
 - projet
 - startup
-- week end
 status: publish
 type: post
 published: true

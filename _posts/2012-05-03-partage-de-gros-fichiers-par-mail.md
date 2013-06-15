@@ -2,12 +2,10 @@
 layout: post
 title: Partage de gros fichiers par mail
 tags:
-- dev
+- Dev
 - email
 - fichier
-- git
 - github
-- gros
 - partage
 - php
 - symfony

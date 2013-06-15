@@ -4,7 +4,7 @@ title: "Nouveau design, adieu Wordpress, bonjour Jekyll"
 description: ""
 category: 
 tags: 
-- dev
+- Dev
 - php
 - ruby
 - github

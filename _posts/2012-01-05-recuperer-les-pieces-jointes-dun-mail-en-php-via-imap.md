@@ -3,7 +3,6 @@ layout: post
 title: Récupérer les pièces jointes d'un mail en PHP via IMAP
 tags:
 - attachment
-- code
 - Dev
 - email
 - imap

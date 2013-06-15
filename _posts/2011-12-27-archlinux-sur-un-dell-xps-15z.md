@@ -7,7 +7,6 @@ tags:
 - archlinux
 - dell
 - install
-- Linux
 - linux
 - nvidia
 - optimus

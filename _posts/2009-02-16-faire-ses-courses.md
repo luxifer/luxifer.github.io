@@ -2,16 +2,8 @@
 layout: post
 title: Faire ses courses
 tags:
-- charcuterie
-- chedar
 - courses
-- fromage
-- jambon
-- parmezan
-- pâtes
-- riz
 - supermarché
-- viande
 - Vie quotidienne
 status: publish
 type: post

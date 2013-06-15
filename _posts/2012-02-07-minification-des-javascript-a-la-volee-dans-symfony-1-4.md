@@ -2,7 +2,6 @@
 layout: post
 title: Minification des javascript a la volée dans symfony 1.4
 tags:
-- compilation
 - compression
 - Dev
 - javascript

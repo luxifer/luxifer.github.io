@@ -2,13 +2,9 @@
 layout: post
 title: Scrollbar Javascript
 tags:
-- custom
 - Dev
-- easing
 - javascript
 - jquery
-- js
-- scroll
 - scrollbar
 status: publish
 type: post

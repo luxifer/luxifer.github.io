@@ -2,19 +2,12 @@
 layout: post
 title: Upload depuis le navigateur sur iOS
 tags:
-- android
-- browser
 - Dev
 - images
 - ios
-- ipad
-- iphone
-- ipod
 - javascript
 - navigateur
-- photos
 - php
-- pictures
 - safari
 - upload
 status: publish
