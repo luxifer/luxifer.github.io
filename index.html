@@ -11,7 +11,7 @@ description: Ma vie, mes délires
           <small class="muted">le {{ post.date | date_to_string }}</small>
           {% if post.meta.thumb %}
           <div class="img-polaroid">
-            <img src="{{ post.meta.thumb }}" alt="{{ post.title }}" />
+            <img src="/images/640x140/{{ post.meta.thumb }}" alt="{{ post.title }}" />
           </div>
           {% endif %}
           <br />

@@ -4,7 +4,7 @@ layout: default
 <article class="padding10">
   {% if page.meta.thumb %}
   <div class="img-polaroid">
-    <img src="{{ page.meta.thumb }}" />
+    <img src="/images/640x140/{{ page.meta.thumb }}" />
   </div>
   <br />
   {% endif %}
@@ -17,6 +17,9 @@ layout: default
   </div>
   <div class="span3">
     <div class="g-plusone"></div>
+  </div>
+  <div class="span3">
+    <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
   </div>
 </div>
 
@@ -35,13 +38,10 @@ layout: default
 <div class="comments padding10">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = '{{ site.disqus.id }}'; // required: replace example with your forum shortname
       var disqus_url = 'http://{{ site.domain }}{{ page.url }}';
       var disqus_title = "{{ page.title }}";
       var disqus_identifier = '{{ page.meta.dsq_thread_id ? page.meta.dsq_thread_id : page.url }}';
-
-      /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

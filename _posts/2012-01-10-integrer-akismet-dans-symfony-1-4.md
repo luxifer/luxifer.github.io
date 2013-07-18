@@ -26,7 +26,9 @@ Bonjour à tous!
 Aujourd'hui je vais parler de l'intégration de Akismet dans Symfony 1.4 afin de réduire le spam sur ses commentaires. Si vous avez un blog wordpress vous devez sûrement savoir ce qu'est Akismet, sinon je vous invite à visiter le site officiel [ici](http://akismet.com/).
 
 Tout d'abord, il va falloir créer un compte pour récupérer une clé d'API. Pour le développement j'ai choisi le plan "Personal" à 0€, mais si votre site fait du profit ou si vous faites la promotion d'un produit dessus vous devrez souscrire à une offre payante.
+
 <!--break-->
+
 Une fois votre compte créé, vous recevez un mail avec votre clé API et vos informations personnelles. Conservez bien cette clé. Maintenant, on va passer à l'intégration dans symfony. C'est assez simple, vu qu'il y a déjà un plugin de disponible à cette [adresse](http://plugins.symfony-project.org/get/drAkismetPlugin/drAkismetPlugin-0.3.3.tgz). Donc je vous laisse télécharger le plugin et l'extraire dans le répertoire` plugins/` de votre projet symfony. Et ensuite bien renommer le dossier du plugin en "drAkismetPlugin".
 
 On va d'abord commencer par la configuration, donc ouvrez le fichier `akismet.yml.example` dans le sous-répertoire `config/` du plugin et enregistrez le en `akismet.yml`.
@@ -47,10 +49,12 @@ akismet:
       host: www.example.com
       key: ############
 {% endhighlight %}
+
 Maintenant le plugin configuré, il faut activé le plugin dans le fichier `config/projectConfiguration.class.php`.
 
 {% highlight php %}
 <?php
+
 $this->enablePlugins('drAkismetPlugin');
 {% endhighlight %}
 
@@ -60,6 +64,7 @@ Donc pour utiliser le validateur, rien de plus simple, il s'utilise comme un val
 
 {% highlight php %}
 <?php
+
 $this->validatorSchema['text'] = new sfValidatorAnd(array( //text est le contenu du commentaire, adaptez à votre modèle
   $this->validatorSchema['text'],
   new drAkismetValidatorSpam(array(

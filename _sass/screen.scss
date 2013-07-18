@@ -20,6 +20,7 @@ pre {
     background-color: #073642;
     color: #839496;
     overflow: auto;
+    white-space: pre;
     code {
         white-space: pre;
     }
@@ -153,4 +154,20 @@ footer {
 
 .media hr {
     margin-bottom: 0;
+}
+
+.set-1 {
+    font-size: 16px;
+}
+.set-2 {
+    font-size: 18px;
+}
+.set-3 {
+    font-size: 20px;
+}
+.set-4 {
+    font-size: 22px;
+}
+.set-5 {
+    font-size: 24px;
 }

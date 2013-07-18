@@ -4,14 +4,14 @@ title: "Intégration continue avec Symfony 2, Composer et Jenkins"
 description: ""
 category: 
 tags:
-- dev
+- Dev
 - php
 - xml
-- github
 - composer
 - jenkins
+- symfony
 meta:
-  thumb: '/images/640x140/ci.png'
+  thumb: 'ci.png'
 ---
 Bonjour,
 

@@ -3,19 +3,14 @@ layout: post
 title: 1er jour à Paisley
 date: 2009-01-31 23:16:47
 tags:
-- accent
 - chambre
-- cuicise
 - Premiers jours
-- résidence
-- sale
-- saleté
 - service
 status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/29012009050.jpg'
+  thumb: '29012009050.jpg'
   dsq_thread_id: '670409174'
 ---
 Bonjour,

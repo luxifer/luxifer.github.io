@@ -15,6 +15,11 @@ include: [images,font]
 paginate: 5
 lsi: false
 
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_feed_layout: tag_feed
+tag_feed_dir: tag
+
 # configuration for ehancements, uncomment to enable
 
 # feedburner:
@@ -25,3 +30,7 @@ google_analytics:
 
 disqus:
   id: luxifer
+
+piwik:
+    host: piwik.luxifer.fr
+    id: 2 

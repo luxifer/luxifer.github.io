@@ -2,12 +2,10 @@
 layout: post
 title: Partage de gros fichiers par mail
 tags:
-- dev
+- Dev
 - email
 - fichier
-- git
 - github
-- gros
 - partage
 - php
 - symfony
@@ -15,7 +13,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/Capture-du-2012-05-03-163146.png'
+  thumb: 'Capture-du-2012-05-03-163146.png'
   dsq_thread_id: '674319963'
 ---
 Bonjour,

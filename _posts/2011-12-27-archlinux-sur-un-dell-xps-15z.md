@@ -7,7 +7,6 @@ tags:
 - archlinux
 - dell
 - install
-- Linux
 - linux
 - nvidia
 - optimus
@@ -16,7 +15,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/2011-08-10-19.39.31.jpg'
+  thumb: '2011-08-10-19.39.31.jpg'
   dsq_thread_id: '517529089'
 ---
 Salut à tous ;)

@@ -2,26 +2,19 @@
 layout: post
 title: Upload depuis le navigateur sur iOS
 tags:
-- android
-- browser
 - Dev
 - images
 - ios
-- ipad
-- iphone
-- ipod
 - javascript
 - navigateur
-- photos
 - php
-- pictures
 - safari
 - upload
 status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/Capture-du-2012-02-08-130518.png'
+  thumb: 'Capture-du-2012-02-08-130518.png'
   dsq_thread_id: '542472107'
 ---
 Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur les différents choix faits par Apple concernant iOS. Je ne parlerai que d'un seul point car mon but n'est pas de créer un troll mais de partager la solution que j'ai trouvé pour pallier à ce problème.

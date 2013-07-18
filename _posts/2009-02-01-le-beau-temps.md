@@ -12,7 +12,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/01022009066.jpg'
+  thumb: '01022009066.jpg'
   dsq_thread_id: '670449708'
 ---
 Bonjour,

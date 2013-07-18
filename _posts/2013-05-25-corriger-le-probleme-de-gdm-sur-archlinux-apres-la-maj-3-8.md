@@ -7,8 +7,9 @@ tags:
 - system
 - linux
 - gnome
+- archlinux
 meta:
-  thumb: '/images/640x140/gnome-3-8.png'
+  thumb: 'gnome-3-8.png'
 ---
 Bonjour,
 

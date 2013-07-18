@@ -2,7 +2,6 @@
 layout: post
 title: Minification des javascript a la volée dans symfony 1.4
 tags:
-- compilation
 - compression
 - Dev
 - javascript
@@ -17,11 +16,13 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/2378867408_5d2ac25d2f_o.jpg'
+  thumb: '2378867408_5d2ac25d2f_o.jpg'
   dsq_thread_id: '567526946'
 ---
 Salut à tous! Ajourd'hui on va parler webperf et notamment temps de chargement des pages. Quand on développe en javascript on utilise souvent jQuery comme framework qui assure la compatibilité de son application sur presque tous les navigateurs. Qui simplifie certains fonctionnement, etc. Et souvent quand on utilise ce framework on ne prend pas la peine de redévelopper l'existant, on va chercher un plugin. Et forcément au final on se retrouve avec l'inclusion de 15 javascripts par page ce qui ralenti considérablement le temps de chargement. Je fais la passe sur la configuration du serveur web, on va considéré que de ce côté là la durée d'expiration est précisée, la compression activée, etc. Reste que même si la requête est faite sur le cache du navigateur, ça fait quand même une requête.
+
 <!--break-->
+
 Deuxième point, la plupart du temps les plugins fournis ne sont pas minifiés, c'est à dire que le code est lisible et compréhensible. Une minification simple consiste a raccourcir les noms de variable et supprimer les espaces blancs et sauts de ligne. De ce fait on peu avoir un gain non négligeable sur la taille du javascript.
 
 Le problème qui se pose c'est le passage en production du site. Quelles sont les posibilités  avec symfony 1.4 pour minifier et compresser les javascripts de façon automatique ? Le plus simple serait de passer par un service ou un programme et de minifier à la main chaque javascript avant de déployer. Pour peu que les mises en production soient régulières, ce processus devient vite barbant. Le fait est aussi qu'il y aura toujours autant de requêtes de faites pour récupérer les javascripts au chargement de la page. Et le plus long n'est pas le téléchargement de la ressource mais l'attente de la réponse du serveur. Je me suis donc sit qu'il fallait minifier et commpresser tous les javascripts dans un seul fichier. Le problème c'est que pour un gros site, suivant les pages, il n'y aura pas les mêmes javascripts d'appelés. Et donc comment faire pour parcourir toutes les pages différentes du site de façon automatique ? Le plus simple c'est de laisser cette tâche à l'utilisateur. Comprenez au premier affichage d'une page on va lancer une tâche de minification des javascripts et mettre un fallback avec les javascripts non minifiés pour que le site fonctionne toujours correctement. Une fois cette tâche terminée le prochain affichage de cette même page va appeler l'unique javascript minifié.
@@ -76,7 +77,6 @@ function get_javascripts()
 
   return $html;
 }
-?>
 {% endhighlight %}
 
 Ensuite la tâche de minification `genMinifiedJs.php` à placer à la racine du répertoire lib du projet symfony
@@ -116,7 +116,6 @@ if ($argc) {
     die; //Une instance existe déja, on quitte le navire
   }
 }
-?>
 {% endhighlight %}
 
 Et voilà, maintenant, à chaque page un seule javascript sera chargé et une fois qu'il sera mis en cache par le navigateur, le temps de chargement du site sera bien réduit.

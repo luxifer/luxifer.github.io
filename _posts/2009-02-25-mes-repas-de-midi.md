@@ -3,24 +3,13 @@ layout: post
 title: Mes repas de midi
 tags:
 - fish'n'chips
-- frites
-- gras
-- irnbru
-- lunch
-- midi
-- Party
 - repas
 - sandwichs
-- soir
-- soirée
-- université
-- vendredi
-- Vie quotidienne
 status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/24022009107.jpg'
+  thumb: '24022009107.jpg'
   dsq_thread_id: '551211034'
 ---
 Bonjour,

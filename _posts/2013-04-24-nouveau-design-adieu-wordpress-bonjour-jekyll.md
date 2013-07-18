@@ -4,7 +4,7 @@ title: "Nouveau design, adieu Wordpress, bonjour Jekyll"
 description: ""
 category: 
 tags: 
-- dev
+- Dev
 - php
 - ruby
 - github
@@ -12,7 +12,7 @@ status: publish
 type: post
 published: true
 meta:
-  thumb: '/images/640x140/jekyll.png'
+  thumb: 'jekyll.png'
 ---
 Bonjour,
 
