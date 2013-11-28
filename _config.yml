@@ -30,7 +30,3 @@ google_analytics:
 
 disqus:
   id: luxifer
-
-piwik:
-    host: piwik.luxifer.fr
-    id: 2 
