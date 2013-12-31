@@ -11,9 +11,9 @@ tags:
 meta:
   thumb: 'hacking_matrix.png'
 ---
-
 Je ne sais pas si certains d'entre vous ont déjà eu ce problème. La connexion ssh par clé publique est bien configurée, et pourtant ssh demande quand même un mot de passe. Dans la plupart des cas il s'agit d'un problème de permissions sur le dossier `.ssh`. Voici les bonnes permissions à appliquer sur ce dossier :
 <!--break-->
+
 {% highlight bash %}
 # dossier .ssh
 
