@@ -2,13 +2,18 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %}
+    <meta name="description" content="{% if page.type == "post" %}{{ page.content | split:'<!--break-->' | first }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:description" content="{% if page.type == "post" %}{{ page.content | split:'<!--break-->' | first }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}" />
     <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@florent_viel">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta name="twitter:creator" content="@florent_viel">
+    <meta name="twitter:image:src" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
+    <meta name="twitter:domain" content="{{ site.domain }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Poly|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />

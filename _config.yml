@@ -10,6 +10,7 @@ pygments: true
 domain: blog.luxifer.fr
 title: Blog de Florent Viel
 author: Florent Viel
+description: Blog centré sur le développement php et symfony2
 email: florent.viel69@gmail.com
 include: [images,font]
 paginate: 5
