@@ -1,8 +1,8 @@
 # standard jekyll configuration
 
 permalink: pretty
-exclude: ['Rakefile', 'config.rb']
-markdown: maruku
+exclude: ['Rakefile', 'config.rb', 'vendor']
+markdown: kramdown
 pygments: true
 
 # configuration required for some pages
