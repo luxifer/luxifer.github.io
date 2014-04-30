@@ -42,6 +42,6 @@ Psy Shell v0.1.8 (PHP 5.5.11 — cli) by Justin Hileman
 
 Depuis ce shell on a la variable `$kernel` qui est exposée et qui est le kernel Symfony. Depuis ce shell on peut lancer `$kernel->getContainer()` pour accéder au conteneur de service symfony et donc ainsi accéder à tous les services définis. Tout le code qu'on a écrit dans le dossier `src/` est disponible et on peut donc facilement instancier un modèle comme `Acme\UserBundle\Entity\User`.
 
-Cette petite lib va instancier un kernel Symfony avec l'environnement de `dev`, c'est une sorte de _proof of concept_, par la suite je vais rajouter des fonctionnalité pour changer l'environnement ou même le fichier de bootstrap de Symfony.
+Cette petite lib va instancier un kernel Symfony avec l'environnement de `dev`, c'est une sorte de _proof of concept_, par la suite je vais rajouter des fonctionnalités pour changer l'environnement ou même le fichier de bootstrap de Symfony.
 
 Happy development!
