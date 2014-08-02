@@ -3,7 +3,7 @@
 permalink: pretty
 exclude: ['Rakefile', 'config.rb', 'vendor']
 markdown: kramdown
-pygments: true
+highlighter: pygments
 
 # configuration required for some pages
 
