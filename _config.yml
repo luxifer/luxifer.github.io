@@ -4,6 +4,7 @@ permalink: pretty
 exclude: ['Gemfile', 'Gemfile.lock']
 markdown: kramdown
 highlighter: pygments
+gems: [jekyll-geo-pattern]
 
 # configuration required for some pages
 
@@ -16,7 +17,6 @@ include: [images,font]
 paginate: 5
 lsi: false
 icon: /assets/images/icon.png
-cover: /assets/images/cover.jpg
 
 # specific configuration
 

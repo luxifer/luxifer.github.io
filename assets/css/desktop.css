@@ -4,6 +4,11 @@ header, footer {
 	background-attachment: fixed;
 }
 
+.has-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 #post-info {
 	width: 700px;
 	left: 50%;
