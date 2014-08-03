@@ -12,5 +12,8 @@ image: /assets/images/luke.png
     <a href="{{ site.url }}"><span class="genericon genericon-home"></span></a>
 </div>
 <p class="copyright">&copy;{{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
-<script src="/assets/js/jquery.fittext.js"></script>
-<script type="text/javascript">jQuery("#404").fitText(0.18, { maxFontSize: '350px' })</script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+        $("#404").fitText(0.18, { maxFontSize: '350px' });
+     });
+</script>
