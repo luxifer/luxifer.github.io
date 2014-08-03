@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intégrer Akismet dans Symfony 1.4
+title: "Intégrer Akismet dans Symfony 1.4"
 tags:
 - akismet
 - Dev

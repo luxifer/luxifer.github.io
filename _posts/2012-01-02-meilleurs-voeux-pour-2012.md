@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meilleurs voeux pour 2012
+title: "Meilleurs voeux pour 2012"
 tags:
 - Misc
 - Vie quotidienne

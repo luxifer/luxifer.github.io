@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inscription à l'université
+title: "Inscription à l&apos;université"
 date: 2009-01-31 23:38:12
 tags:
 - informatique

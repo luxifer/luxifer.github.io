@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edimbourg
+title: "Edimbourg"
 tags:
 - edimbourg
 - Vie quotidienne

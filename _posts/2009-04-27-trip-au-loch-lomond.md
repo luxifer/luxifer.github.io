@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trip au Loch Lomond
+title: "Trip au Loch Lomond"
 tags:
 - Visites
 status: publish

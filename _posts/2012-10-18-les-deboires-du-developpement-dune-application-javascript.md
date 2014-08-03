@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Les déboires du développement d'une application javascript
+title: "Les déboires du développement d&apos;une application javascript"
 tags:
 - Dev
 - javascript

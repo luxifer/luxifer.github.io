@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Le beau temps
+title: "Le beau temps"
 date: 2009-02-01 19:14:38
 tags:
 - beau

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Saint Patrick's Day
+title: "Saint Patrick&apos;s Day"
 tags:
 - bar
 - glasgow

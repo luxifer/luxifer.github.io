@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bonnes fêtes de fin d'année
+title: "Bonnes fêtes de fin d&apos;année"
 tags:
 - Misc
 status: publish

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1er jour à Paisley
+title: "1er jour à Paisley"
 date: 2009-01-31 23:16:47
 tags:
 - chambre

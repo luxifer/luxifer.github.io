@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Faire ses courses
+title: "Faire ses courses"
 tags:
 - courses
 - supermarché

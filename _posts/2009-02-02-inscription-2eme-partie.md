@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inscription 2ème partie
+title: "Inscription 2ème partie"
 date: 2009-02-02 18:09:31
 tags:
 - carte

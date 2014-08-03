@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Déployer un projet PHP, Python, Ruby
+title: "Déployer un projet PHP, Python, Ruby"
 tags:
 - Dev
 - php

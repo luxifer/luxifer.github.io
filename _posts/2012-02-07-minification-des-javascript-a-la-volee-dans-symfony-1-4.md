@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minification des javascript a la volée dans symfony 1.4
+title: "Minification des javascript a la volée dans symfony 1.4"
 tags:
 - compression
 - Dev
@@ -37,7 +37,7 @@ Pour le code, voici les différents fichier :
 Tout d'abord le `AssetHelper.php`
 
 {% highlight php %}
-<?php 
+<?php
 function get_javascripts()
 {
   $response = sfContext::getInstance()->getResponse();

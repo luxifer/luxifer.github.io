@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mes repas de midi
+title: "Mes repas de midi"
 tags:
 - fish'n'chips
 - repas

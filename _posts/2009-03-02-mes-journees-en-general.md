@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mes journées en général
+title: "Mes journées en général"
 tags:
 - Premiers jours
 status: publish

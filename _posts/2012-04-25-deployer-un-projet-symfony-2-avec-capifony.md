@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Déployer un projet Symfony 2 avec Capifony
+title: "Déployer un projet Symfony 2 avec Capifony"
 tags:
 - capifony
 - capistrano

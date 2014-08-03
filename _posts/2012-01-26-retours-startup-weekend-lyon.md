@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retours Startup Weekend Lyon
+title: "Retours Startup Weekend Lyon"
 tags:
 - entrepreneur
 - lyon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Récupérer les pièces jointes d'un mail en PHP via IMAP
+title: "Récupérer les pièces jointes d&apos;un mail en PHP via IMAP"
 tags:
 - attachment
 - Dev
@@ -35,7 +35,7 @@ class MailAttachmentManager
   private $host;
 
   /**
-   * @var string login 
+   * @var string login
    */
   private $login;
 
@@ -156,7 +156,7 @@ class MailAttachmentManager
       for ($i = 1; $i < count($parts); $i++) {
         $part = $parts[$i];
 
-        if ($part->ifdisposition && strtolower($part->disposition) == "attachment") {        
+        if ($part->ifdisposition && strtolower($part->disposition) == "attachment") {
           $ext=$part->subtype;
           $params = $this->getDParameters($part);
 
@@ -290,7 +290,7 @@ Pour ce qui est de l'utilisation, voici une petite démo rapide d'utilisation po
 
 {% highlight php %}
 #!/usr/bin/env php
-<?php 
+<?php
 require_once("attachmentread.class.php");
 $host="{host:port/params}BOX"; // voir http://fr.php.net/imap_open
 $login=""; //imap login

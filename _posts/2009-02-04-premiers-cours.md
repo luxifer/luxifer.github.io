@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Premiers cours
+title: "Premiers cours"
 tags:
 - cours
 - Premiers jours
