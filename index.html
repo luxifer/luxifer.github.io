@@ -1,74 +1,39 @@
 ---
 layout: default
-description: Ma vie, mes délires
+title: Home
 ---
 
-  <div class="posts padding10">
-    <ul class="media-list">
-      {% for post in paginator.posts %}
-        <li class="media">
-          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-          <small class="muted">le {{ post.date | date_to_string }}</small>
-          {% if post.meta.thumb %}
-          <div class="img-polaroid">
-            <img src="/images/640x140/{{ post.meta.thumb }}" alt="{{ post.title }}" />
-          </div>
-          {% endif %}
-          <br />
-          <p>{{ post.content | split:'<!--break-->' | first }}</p>
-          {% if post.content contains '<!--break-->' %}
-          <a href="{{ post.url }}" class="btn btn-small">Continuer à lire <i class="icon-circle-arrow-right"></i></a>
-          {% endif %}
-          <hr>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="pagination padding10">
-    <ul>
-      {% if paginator.previous_page %}
-      <li>
-        {% if paginator.previous_page == 1 %}
-        <a href="/">&laquo;</a>
-        {% else %}
-        <a href="/page{{paginator.previous_page}}">&laquo;</a>
-        {% endif %}
-      </li>
-      {% else %}
-      <li class="disabled">
-        <span>&laquo;</span>
-      </li>
-      {% endif %}
-
-      {% if paginator.page == 1 %}
-        <li class="active">
-          <span>1</span>
-      {% else %}
-        <li>
-          <a href="/">1</a>    
-      {% endif %}
-        </li>
-
-      {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-          <li class="active">
-            <span>{{count}}</span>  
-        {% else %}
-          <li>
-            <a href="/page{{count}}">{{count}}</a>
-        {% endif %}
-          </li>
-      {% endfor %}
-
-      {% if paginator.next_page %}
-      <li>
-        <a href="/page{{paginator.next_page}}">&raquo;</a>
-      </li>
-      {% else %}
-      <li class="disabled">
-        <span>&raquo;</span>
-      </li>
-      {% endif %}
-    </ul>
-  </div>
+<header class="clean" style="height: 350px; background-image: url({{ site.cover }});" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50">
+  {% include top.html %}
+  <a href="{{ site.url }}">
+    <div id="home-title" class="site-icon-home" style="background-image: url({{ site.icon }});" data-stellar-ratio="0.5"></div>
+  </a>
+</header>
+<div id="middle">
+<div id="post-list">
+  {% for post in paginator.posts %}
+    <div>
+      <span class="post-date">{{ post.date | date_to_long_string }}</span>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="post-description">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+    </div>
+    <br>
+  {% endfor %}
+</div>
+<nav class="pagination" role="navigation">
+  {% if paginator.next_page %}
+    <a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
+  {% endif %}
+  <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="older-posts" href="/">Newer posts &rarr;</a>
+    {% else %}
+      <a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+    {% endif %}
+  {% endif %}
+</nav>
+</div>
+<footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+  <p class="copyright">&copy; {{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
+</footer>

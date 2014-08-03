@@ -1,182 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{% if page.type == "post" %}{{ page.content | split:'<!--break-->' | first }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.type == "post" %}{{ page.content | split:'<!--break-->' | first }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}" />
-    <meta charset="utf-8">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@florent_viel">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
-    <meta name="twitter:creator" content="@florent_viel">
-    <meta name="twitter:image:src" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
-    <meta name="twitter:domain" content="{{ site.domain }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Poly|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" media="screen" href="/stylesheets/screen.css" type="text/css" />
-    <link rel="stylesheet" media="screen" href="/stylesheets/solarizeddark.css" type="text/css" />
-    <link rel="stylesheet" media="screen" href="/stylesheets/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" media="screen" href="/stylesheets/font-awesome-ie7.min.css" type="text/css">
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog de Florent Viel">
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
-    {% if site.feedburner %}
-    <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
-    {% endif %}
-  </head>
+  {% include head.html %}
   <body>
-    <header>
-      <div class="navbar navbar-inverse navbar-static-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="/">{{ site.title }}</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li><a href="/a-propos/">A propos</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="services">Services</a>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="Services">
-                    <li role="menuitem"><a href="http://git.luxifer.fr" target="_blank">Gitlab</a></li>
-                    <li role="menuitem"><a href="http://cloud.luxifer.fr" target="_blank">Cloud privé</a></li>
-                    <li role="menuitem"><a href="http://lxr.wf" target="_blank">URL Shortener</a></li>
-                  </ul>
-                </li>
-                <li><a href="http://florentviel.com" target="_blank">CV</a></li>
-                <li><a href="http://florentviel.tumblr.com" target="_blank">Microblog</a></li>
-              </ul>
-              <ul class="nav pull-right">
-                <li><a href="/atom.xml">RSS</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="span2">
-          <div class="content aside padding10" itemscope itemtype="http://data-vocabulary.org/Person">
-            <h4 itemprop="name">Florent Viel</h4>
-            <hr>
-            <div class="img-polaroid">
-              <img src="http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=140" itemprop="photo" alt="Florent Viel" />
-            </div>
-            <br />
-            <ul class="unstyled">
-              <li><a href="https://github.com/luxifer" target="_blank"><i class="icon-github"></i> Github</a></li>
-              <li><a href="https://twitter.com/florent_viel" target="_blank"><i class="icon-twitter"></i> Twitter</a></li>
-              <li><a href="https://fr.linkedin.com/in/florentviel/" target="_blank"><i class="icon-linkedin"></i> Linked'in</a></li>
-              <li><a href="https://plus.google.com/u/1/110279340797376178645" target="_blank" rel="author"><i class="icon-google-plus"></i> Google+</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="span7 content">
-          {% if page.title %}
-          <h1 class="text-center">{{ page.title }}</h1>
-          <hr>
-          {% endif %}
-          {{ content }}
-        </div>
-        <div class="span3">
-          {% if page.date %}
-          <div class="padding10 content aside">
-            <small class="muted"><i class="icon-calendar"></i> Posté le {{ page.date | date_to_string }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</small><hr>
-            <i class="icon-tags"></i> Tags<br />
-            {% for tag in page.tags %}
-            <span class="label {{ tag }}">{{ tag }}</span>
-            {% endfor %}
-          </div>
-          {% endif %}
-          {% if site.related_posts %}
-          <div class="aside padding10 content">
-            <h4>Posts associés</h4>
-            <hr>
-            <ul class="unstyled">
-              {% for post in site.related_posts limit:5 %}
-                <li><small><a href="{{ post.url }}">{{ post.title }}</a><br /><small class="muted"> posté le {{ post.date | date_to_string }}</small></small></li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% endif %}
-          <div class="aside padding10 content">
-            <h4>Tags</h4>
-            <hr>
-            <div id="tag-cloud">
-              {{ site | tag_cloud }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="container">
-        <div class="row-fluid">
-          <div class="span4  php">
-            <h4>Dernières publications</h4>
-            <hr>
-            <ul class="unstyled">
-            {% for post in  site.posts limit:5 %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-            </ul>
-          </div>
-          <div class="span4 python">
-            <h4>Liens</h4>
-            <hr>
-            <ul class="unstyled">
-              <li><a href="/sitemap.xml">Plan du site</a></li>
-              <li><a href="/atom.xml">RSS</a></li>
-            </ul>
-          </div>
-          <div class="span4 ruby">
-            <h4>Pages</h4>
-            <hr>
-            <ul class="unstyled">
-              <li><a href="/a-propos/">A propos</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script type="text/javascript">
-      window.___gcfg = {lang: 'fr'};
-
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
+    {{ content }}
+    {% include foot.html %}
+    <script>
+    var width = $(window).width()
+    if ( width > 899 )
+    $( function(){
+        $.stellar({
+          responsive: true,
+      verticalScrolling: true,
+      horizontalOffset: 0,
+      verticalOffset: 0,
+      positionProperty: 'transform',
+        });
+    });
     </script>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    {% if site.google_analytics %}
-    <!-- google analytics async -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{ site.google_analytics.account }}']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-         ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    {% endif %}
   </body>
 </html>

@@ -1,7 +1,7 @@
 # standard jekyll configuration
 
 permalink: pretty
-exclude: ['Rakefile', 'config.rb', 'vendor', 'Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock']
 markdown: kramdown
 highlighter: pygments
 
@@ -15,19 +15,23 @@ email: florent.viel69@gmail.com
 include: [images,font]
 paginate: 5
 lsi: false
+icon: /assets/images/icon.png
+cover: /assets/images/cover.jpg
 
-tag_page_layout: tag_page
-tag_page_dir: tag
-tag_feed_layout: tag_feed
-tag_feed_dir: tag
-
-# configuration for ehancements, uncomment to enable
-
-# feedburner:
-#   id: feedburnerid
+# specific configuration
 
 google_analytics:
   account: UA-438897-2
 
 disqus:
   id: luxifer
+
+author:
+  name: Florent Viel
+  url: https://plus.google.com/+FlorentViel
+
+copyright:
+  author:   Florent Viel
+  url:      http://florentviel.com
+  type_title:   Tous droits réservés
+  type_url: http://creativecommons.org/licenses/by-nc/2.5

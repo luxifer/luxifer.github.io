@@ -1,54 +1,65 @@
 ---
 layout: default
+article: true
 ---
-<article class="padding10">
-  {% if page.meta.thumb %}
-  <div class="img-polaroid">
-    <img src="/images/640x140/{{ page.meta.thumb }}" />
-  </div>
-  <br />
+
+<header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.meta.thumb %}/images/{{ page.meta.thumb }}{% else %}{{ site.cover }}{% endif %}); height: 100%;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50">
+  {% if page.video %}
+    <video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" data-stellar-ratio="0.5">
+    {% for format in page.video %}
+      <source src="{% for url in format limit:1 offset:1 %}{{ url }}{% endfor %}" type="video/{% for type in format limit:1 %}{{ type }}{% endfor %}">
+    {% endfor %}
+    </video>
   {% endif %}
-  {{ content }}
-</article>
-
-<div class="row-fluid padding10">
-  <div class="span3">
-    <a href="https://twitter.com/share" class="twitter-share-button" data-via="florent_viel" data-lang="fr">Tweeter</a>
-  </div>
-  <div class="span3">
-    <div class="g-plusone"></div>
-  </div>
-  <div class="span3">
-    <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="arial"></div>
-  </div>
-</div>
-
-<div class="padding10">
-  <ul class="pager">
-    {% if page.previous %}
-    <li class="previous"><a href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>
+  {% include top.html %}
+  <div id="post-info" data-stellar-ratio="0.7">
+    <h1>{{ page.title }}</h1>
+    {% if page.quote %}
+      <h2>{{ page.quote }}</h2>
     {% endif %}
-    {% if page.next %}
-    <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>
-    {% endif %}
-  </ul>
+    <a class="site-title" href="{{ site.url }}"><div class="site-icon-small" style="background-image: url({{ site.icon }});"></div>{{ site.title }}</a>, in {{ page.date | date_to_long_string }}
+  </div>
+  <div id="nav-icon" style="bottom: 30px;" data-stellar-ratio="4">
+    <a class="scroll" data-speed="500" href="#article"><span class="genericon genericon-expand"></span></a>
+  </div>
+</header>
+<div id="middle">
+  <div id="article">
+    {{ content }}
+  </div>
+  <div id="comments">
+    {% include comments.html %}
+  </div>
 </div>
-
-{% if site.disqus %}
-<div class="comments padding10">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-      var disqus_shortname = '{{ site.disqus.id }}'; // required: replace example with your forum shortname
-      var disqus_url = 'http://{{ site.domain }}{{ page.url }}';
-      var disqus_title = "{{ page.title }}";
-      var disqus_identifier = '{{ page.meta.dsq_thread_id ? page.meta.dsq_thread_id : page.url }}';
-      (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
+{% if page.next %}
+  {% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
+  {% capture footer_image %}{% if page.next.meta.thumb %}/images/{{ page.next.meta.thumb }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
+  {% capture footer_message %}Read next{% endcapture %}
+  {% capture footer_url %}{{ page.next.url }}{% endcapture %}
+  {% capture footer_title %}{{ page.next.title }}{% endcapture %}
+  {% capture footer_quote %}{{ page.next.quote }}{% endcapture %}
+{% else %}
+  {% for post in site.related_posts limit:1 %}
+    {% capture footer_style %}{% if post.dark %}dark{% else %}clean{% endif %}{% endcapture %}
+    {% capture footer_image %}{% if post.meta.thumb %}/images/{{ post.meta.thumb }}{% else %}{{ site.cover }}{% endif %}{% endcapture %}
+    {% capture footer_message %}Featured post{% endcapture %}
+    {% capture footer_url %}{{ post.url }}{% endcapture %}
+    {% capture footer_title %}{{ post.title }}{% endcapture %}
+    {% capture footer_quote %}{{ post.quote }}{% endcapture %}
+  {% endfor %}
 {% endif %}
+<footer class="{{ footer_style }}" style="background-image: url({% if footer_image %}{{ footer_image }}{% else %}{{ site.cover }}{% endif %}); height: 75%; min-height: 500px;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50" data-stellar-vertical-offset="50">
+  <div id="nav-icon" style="top: 60px;" data-stellar-ratio="0.8">
+    <a class="scroll" data-speed="500" href="#article"><span class="genericon genericon-collapse"></span></a>
+  </div>
+  <div id="post-info" data-stellar-ratio="0.5" data-stellar-vertical-offset="120">
+    <h3>{{ footer_message }}</h3>
+    <a href="{{ footer_url }}">
+      <h1>{{ footer_title }}</h1>
+      {% if footer_quote %}
+        <h2>{{ footer_quote }}</h2>
+      {% endif %}
+    </a>
+  </div>
+  <p class="copyright">&copy; {{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
+</footer>

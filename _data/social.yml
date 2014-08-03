@@ -1,0 +1,19 @@
+- icon:   twitter
+  url:    https://twitter.com/florent_viel
+  desc:   Suivez moi sur Twitter
+
+- icon:   github
+  url:    https://github.com/luxifer
+  desc:   Fork me on Github
+
+- icon:   googleplus-alt
+  url:    https://google.com/+FlorentViel
+  desc:   Ajoutez-moi sur Google+
+
+- icon:   linkedin
+  url:    https://fr.linkedin.com/in/florentviel/
+  desc:   Ajoutez-moi sur LinkedIn
+
+- icon:   feed
+  url:    http://camporez.com/atom.xml
+  desc:   Abonnez-vous à mes posts
