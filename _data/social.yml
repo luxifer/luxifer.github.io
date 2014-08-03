@@ -15,5 +15,5 @@
   desc:   Ajoutez-moi sur LinkedIn
 
 - icon:   feed
-  url:    http://camporez.com/atom.xml
+  url:    /atom.xml
   desc:   Abonnez-vous à mes posts
