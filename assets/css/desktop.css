@@ -9,6 +9,7 @@ header, footer {
 	left: 50%;
 	margin-left: -350px;
 	bottom: 100px;
+	text-shadow: 0 0 4px rgba(0,0,0,0.5);
 }
 
 #post-info h1 {
