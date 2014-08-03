@@ -21,6 +21,7 @@ meta:
   ci_post_description: ''
   dsq_thread_id: '516619262'
   _shorten_url_bitly: http://j.mp/J3uCec
+  thumb: false
 ---
 Je me suis penché sur divers framework de développement web, notamment en python, ruby et php. J'ai pu tester Django, Ruby on Rails, Symfony et actuellement Symfony 2. L'avantage d'utiliser un framework c'est la possibilité de structurer son code, de le rendre évolutif et de laisser la possibilité à d'autres contributeurs de comprendre ce qu'on écrit. Tout ça c'est bien sympa mais ce n'est pas le but de ce billet.
 <!--break-->

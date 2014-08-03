@@ -18,6 +18,7 @@ meta:
   ci_post_description: ''
   dsq_thread_id: '515850159'
   _shorten_url_bitly: http://j.mp/IpReC6
+  thumb: false
 ---
 Salut à tous,
 

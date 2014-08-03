@@ -10,6 +10,7 @@ meta:
   _edit_last: '2'
   dsq_thread_id: '516061550'
   _shorten_url_bitly: http://j.mp/IyoSVp
+  thumb: false
 ---
 Salut,
 

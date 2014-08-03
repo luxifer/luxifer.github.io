@@ -11,7 +11,7 @@ status: publish
 type: post
 published: true
 meta:
-  image: ''
+  thumb: false
   Hide OgTags: '0'
   Hide SexyBookmarks: '0'
   _edit_last: '2'

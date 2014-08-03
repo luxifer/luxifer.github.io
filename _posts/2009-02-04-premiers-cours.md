@@ -13,6 +13,7 @@ meta:
   _edit_last: '2'
   dsq_thread_id: '583955597'
   _shorten_url_bitly: http://j.mp/HU0gLt
+  thumb: false
 ---
 Bonjour,
 

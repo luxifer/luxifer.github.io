@@ -21,7 +21,7 @@ meta:
   ci_post_duration: ''
   ci_post_description: ''
   dsq_thread_id: '518110033'
-  image: ''
+  thumb: false
   embed: This is the default text
   seo_follow: 'false'
   seo_noindex: 'false'

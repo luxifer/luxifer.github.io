@@ -15,7 +15,7 @@ meta:
   _edit_last: '2'
   Hide SexyBookmarks: '0'
   Hide OgTags: '0'
-  image: ''
+  thumb: false
   embed: This is the default text
   seo_follow: 'false'
   seo_noindex: 'false'
