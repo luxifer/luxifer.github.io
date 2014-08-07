@@ -15,6 +15,7 @@ published: true
 meta:
   thumb: 'Capture-du-2012-05-03-163146.png'
   dsq_thread_id: '674319963'
+dark: true
 ---
 Bonjour,
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Intégration continue avec Symfony 2, Composer et Jenkins"
 description: ""
-category: 
+category:
 tags:
 - Dev
 - php
@@ -12,6 +12,7 @@ tags:
 - symfony
 meta:
   thumb: 'ci.png'
+dark: true
 ---
 Bonjour,
 

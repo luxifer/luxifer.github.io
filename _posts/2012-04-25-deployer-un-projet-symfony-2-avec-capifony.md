@@ -17,6 +17,7 @@ published: true
 meta:
   thumb: 'Capture-du-2012-04-25-161150.png'
   dsq_thread_id: '663485541'
+dark: true
 ---
 Bonjour à tous!
 

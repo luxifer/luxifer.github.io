@@ -4,10 +4,10 @@ title: Home
 ---
 
 {% capture pattern %}{% uri_geo_pattern text=site.title %}{% endcapture %}
-<header class="clean" style="background-image: {{ pattern }}; height: 350px;" data-stellar-background-ratio="0.5" data-stellar-horizontal-offset="50">
+<header class="clean" style="background-image: {{ pattern }}; height: 350px;">
   {% include top.html %}
   <a href="{{ site.url }}">
-    <div id="home-title" class="site-icon-home" style="background-image: url({{ site.icon }});" data-stellar-ratio="0.5"></div>
+    <div id="home-title" class="site-icon-home" style="background-image: url({{ site.icon }});"></div>
   </a>
 </header>
 <div id="middle">
