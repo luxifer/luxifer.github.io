@@ -2,7 +2,7 @@
 
 permalink: pretty
 exclude: ['Gemfile', 'Gemfile.lock']
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 gems: [jekyll-geo-pattern]
 
