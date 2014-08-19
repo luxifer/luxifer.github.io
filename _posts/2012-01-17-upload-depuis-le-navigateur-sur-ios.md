@@ -21,7 +21,7 @@ dark: true
 Bonjour à tous, aujourd'hui je vais écrire un article plutôt incendiaire sur les différents choix faits par Apple concernant iOS. Je ne parlerai que d'un seul point car mon but n'est pas de créer un troll mais de partager la solution que j'ai trouvé pour pallier à ce problème.
 
 Je ne sais pas si vous le savez, mais sur iPhone, iPod et iPad il est impossible de cliquer sur le bouton parcourir d'un formulaire sur une pag web pour joindre un fichier. Celui-ci est tout simplement grisé... On ne peut pas accéder a son arborescence de fichier depuis le navigateur safari sur iOS. Ceci est du au fait que ce système d'exploitation, chaque application possède son propre système de fichier et ne peut pas accéder au contenu d'une autre application. Je ne comprend pas le choix des développeurs Apple sur ce point là. Pourquoi brider l'expérience web mobile et de forcer à passer à des applications tierces pour pallier à ce problème.
-<!--break-->
+
 Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contourner le bridage de Apple. Il s'agit de [Picup](http://picupapp.com/index.html). Cette application va transformer les champs `<input type="file">` en lien `fileupload://` qui va ensuite faire appel a l'appli installée sur le périphérique. Pour intégrer cette appli a son site internet il suffit d'ajouter le fichier javascript téléchargeable [ici](https://castle.so/dl/5tt6l+s) sur la page contenant le formulaire. Et ensuite il suffit d'utiliser le helper pour générer l'url à passer a l'appli pour traiter le fichier.
 
 {% highlight javascript %}

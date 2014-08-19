@@ -20,7 +20,7 @@ Aujourd'hui on va parler d'intégration continue avec Symfony2, Composer et Jenk
 
 Après plusieurs jours de galère à chercher de la doc sur comment mettre en place des tests automatisé sur symfony2 avec jenkins, j'ai finalement réussi à faire ce que je voulais.
 Tout d'abord, plusieurs problèmatiques se posent. Pour les tests unitaires pas besoin de grand chose, on test juste une classe, une fonction ou une méthode. Pour les tests fonctionnels c'est différent. Il faut un environnement, une base de donnée et potentiellement un jeu de donnée.
-<!--break-->
+
 Passons donc aux choses sérieuses.
 
 Symfony permet de créer différents environnements, typiquement `dev` et `prod`. Les besoins ne sont pas les mêmes, en dev on a besoin de debug, de sandbox, etc. En prod on a besoin de cache, etc. On va donc commencer par mettre en place en environnement pour les test et faire en sorte qu'il soit le plus petit et le plus indépendant possible.

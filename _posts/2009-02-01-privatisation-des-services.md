@@ -22,8 +22,6 @@ Bonjour,
 
 La première chose que je remarque en arrivant à Paisley, c'est que tous les services qui sont publics en France sont privés ici. Comme par exemple la police, les transports en communs, les pompiers, ... Tout, absolument tout est privatisé en Ecosse. Et croyez moi c'est la galère.
 
-<!--break-->
-
 ### Les bus
 
 Commençons par les bus. C'est la partie la plus importante de ce billet. J'ai donc voulu prendre le bus pour rejoindre l'autre résidence étudiante de la ville pour rejoindre Sophie. Et je me suis aperçu qu'il y avait beaucoup de bus, ça c'est un fait, mais il y a aussi plusieurs entreprises qui gèrent les bus, alors qu'en France, il y a une seule entreprise par ville ; par exemple TCL à Lyon ou RATP à Paris. De ce fait ça devient plus dur de se retrouver sachant que les bus ne s'arrêtent pas tous aux mêmes arrêts de bus, et que sur les arrêts de bus il n'y a pas tous les bus qui s'y arrêtent qui sont notés. Joyeux bordel.

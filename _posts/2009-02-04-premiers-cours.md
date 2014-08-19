@@ -20,7 +20,7 @@ Bonjour,
 La première chose à dire : j'ai été surpris.
 
 Je commençais donc aujourd'hui mes cours, et plus précisément à 12h. Je me rend donc sur place à l'heure prévue, et là personne, sauf Vincent qui lui avait déjà eut cours avant et m'a donc expliqué que cette heure de cours est réservée pour les projets que l'on doit réaliser dans cette matière. D'ailleurs cette matière en question c'est XML et les documents Web, ça ne dit peut être rien à certains, mais ce cours traite du Web, des standards qui sont mis en place et des techniques actuelles de stockage de document.
-<!--break-->
+
 Bref, revennons au sujet de ce billet qui est mon premier cours. Donc étant donné que cette heure était réservée pour les projets de groupe et que nous n'avons pas encore de projet je rentre donc dans ma chambre en attendant le prochain cours qui est à 13h30. Ensuite je me rend donc dans la salle, de connecte sur un ordinateur, qui, soit dit en passant a mis a peu près 10 bonnes minutes à démarrer... Donc je me connecte et commence à parcourir le web comme à mon habitude en attendant le prof.
 
 A 13h30 le prof arrive, et nous explique que pour suivre le cours, il faut paramétrer l'outils de Windows qui permet de faire des conférences. Donc nous paramétrons cet outils. J'entends par nous, la vingtaine d'étudiant dans la salle inscrit à ce cours. Et parmis ces vingts étudiants, aucune fille... Bref, donc nous nous connectons grâce au logiciel de meeting de Windows, de là, nous pouvons voir l'écran du prof sur notre écran. Donc durant une heure le prof fait son cours, et la grande surprise par rapport aux cours que j'avais en France, silence total durant l'heure. Mis à part les quelques questions que le prof nous à posé et auxquelles je me suis empressé de répondre.

@@ -16,7 +16,7 @@ meta:
   thumb: 'psysh.png'
 ---
 En python avec le framework django ou en ruby avec rails on dispose d'un shell interactif qui permet de jouer avec ses modèles, la base de donnée, etc. Cette possibilité manquant dans Symfony2. C'est pourquoi j'ai développé une petite lib basée sur [psysh](http://psysh.org/) qui permet d'avoir un shell interactif php avec l'application bootée dedans.
-<!--break-->
+
 Le projet est disponible [ici](https://github.com/luxifer/symfony-repl). L'installastion est simple :
 
 {% highlight bash %}

@@ -16,8 +16,6 @@ Bonjour,
 
 En ce moment je ne donne pas beaucoup de nouvelles, ce n'est pas parce que je n'ai pas le temps, mais seulement parce que je ne trouve pas sur quoi écrire... Bref je vous avais dit que j'écrirai un article sur mes repas de midi à l'université, et bien le voilà. Je vais en profiter au passage pour vous parler plus en détail de l'IrnBru, la boisson que j'avais mentionné dans l'article précédent. J'en profite aussi pour remercier mes grand-parents qui m'ont envoyé deux saucissons, un camembert de Normandie et un Mont d'Or.
 
-<!--break-->
-
 ### IrnBru
 
 Qu'est-ce qui se cache derrière ce nom bizarre et imprononçable ? Et bien une boisson énergétique au goût de médicament et de couleur orange fluo. Une petite photo pour voir de quoi ça à l'air.

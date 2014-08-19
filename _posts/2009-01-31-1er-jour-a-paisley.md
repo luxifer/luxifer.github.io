@@ -18,8 +18,6 @@ Bonjour,
 C'est parti pour le déroulement du premier jour à Paisley !
 Tout d'abord la première chose qui m'a interpelé c'est que en dialoguant avec les autochtones, j'en suis venu à me demander si ils parlaient anglais, mais oui c'est bien le cas, c'est seulement l'accent...
 
-<!--break-->
-
 ### Le réveil
 
 Debout 9h du matin afin de rejoindre au plus vite la résidence et récupérer ma chambre. J'ai tout d'abord demander ma route à la réceptionniste de l'hôtel pour trouver l'université. Les instructions furent claires et j'ai trouver sans problèmes.

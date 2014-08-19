@@ -26,7 +26,7 @@ Voilà, c'est bien, j'ai fait joujou avec mon nouveau laptop, mais voilà, c'est
 Donc vient l'étape cruciale de la mise en route : l'installation de Linux sur du matériel tout neuf avec la nouvelle techno Nvidia Optimus.
 
 Et bien croyez moi, c'est pas une mince affaire.
-<!--break-->
+
 Tout d'abord, lancer gparted depuis une clé USB afin de configurer les partitions. Et la j'étais assez bluffé, mais avec la dernière iso release de gparted, je boot sur le bureau, avec la résolution native du laptop. Pas mal. Bon seul petit soucis, le touchpad n'est pas reconnu.
 
 Après quelques fouilles sur internet, je découvre la solution miracle : il faut modifier le protocole utilisé par le module de gestion de la souris.

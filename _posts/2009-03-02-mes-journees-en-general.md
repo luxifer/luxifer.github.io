@@ -16,8 +16,6 @@ Salut,
 
 Pas grand chose de neuf en ce moment. J'en profite quand même pour vous raconter ce que je fais durant mes journées quand je n'ai pas cours, c'est à dire la plupart du temps.
 
-<!--break-->
-
 ### Les journées
 
 Pour commencer, j'ai pris un rythme de sommeil, comme en vacances. C'est à dire que quand je n'ai pas cours, je me lève souvent vers midi voire 1 heure de l'après-midi. C'est aussi du au fait que le soir je me couche rarement avant 2h du matin. Mais ça me plaît. J'ai le temps de faire ce que je veux, de travailler, voir des amis, ...

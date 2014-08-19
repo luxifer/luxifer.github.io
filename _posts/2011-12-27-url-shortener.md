@@ -33,8 +33,6 @@ Voulant me remettre petit à petit dans le framework django de python, je me sui
 
 Le code source du projet est sous licence GPL V3 et est disponible sur github : [https://github.com/LuXiFeR/UrliZr](https://github.com/LuXiFeR/UrliZr)
 
-<!--break-->
-
 J'ai commencé par simplement faire un générateur d'identifiant unique en python :
 {% highlight python %}
 import string
