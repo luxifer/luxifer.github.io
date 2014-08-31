@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "homepage": "https://github.com/luxifer/blog",
+  "authors": [
+    "Florent Viel <florent.viel69@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "FitText.js": "*",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git"
+  }
+}

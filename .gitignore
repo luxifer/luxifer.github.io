@@ -5,3 +5,6 @@ __env
 Gemfile.lock
 vendor
 .bundle
+node_modules
+bower_components
+assets/js
