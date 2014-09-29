@@ -26,7 +26,7 @@ h2 {
 	line-height: 30px;
 }
 
-#article, #comments {
+#article, #comments, #author {
 	width: 90%;
 	padding: 50px 5%;
 	left: 0px;

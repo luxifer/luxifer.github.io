@@ -28,17 +28,21 @@ article: true
   <div id="article">
     {{ content }}
     <p>
-      <a href="https://plus.google.com/110279340797376178645" rel="author">
-        <img class="media-object" src="https://secure.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=20" alt="Florent Viel"> Florent Viel
-      </a>
-    </p>
-    <p>
       <small>
         <em>
           Si vous trouvez une typo, n'hésitez pas à <a href="{{ site.github.repo }}/edit/master/{{ page.path }}">forker et éditer cet article</a>. Merci beaucoup !
         </em>
       </small>
     </p>
+  </div>
+  <div id="author">
+    <hr>
+    <h3>
+      <a href="https://plus.google.com/110279340797376178645" rel="author">
+        <img class="media-object" src="https://secure.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=100" alt="Florent Viel"><br>
+        Florent Viel
+      </a>
+    </h3>
   </div>
   <div id="comments">
     {% include comments.html %}

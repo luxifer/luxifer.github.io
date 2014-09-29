@@ -23,7 +23,7 @@ header, footer {
 	line-height: 44px;
 }
 
-#article, #comments {
+#article, #comments, #author {
 	width: 700px;
 	padding: 50px 0px;
 	left: 50%;
