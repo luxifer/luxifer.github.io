@@ -32,8 +32,8 @@ footer {
 }
 
 p {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	color: #515151;
 }
 
@@ -247,6 +247,8 @@ blockquote, pre, .message {
 	margin: 0px 0px 30px -20px;
 	margin-top: inherit;
 	color: #7a7a7a;
+	background-color: #fafafa;
+	font-style: italic;
 }
 
 blockquote {
