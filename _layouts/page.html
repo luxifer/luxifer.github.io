@@ -20,3 +20,7 @@ layout: default
 <footer class="clean" style="background-position: bottom; height: 60px;">
     <p class="copyright">&copy; 2009 - {{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
 </footer>
+<script>
+  $('header').geopattern('{{ page.title }}');
+  $('footer').geopattern('{{ page.title }}');
+</script>
