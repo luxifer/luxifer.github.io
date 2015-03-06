@@ -38,6 +38,3 @@ copyright:
 
 github:
   repo: https://github.com/luxifer/blog
-
-gems:
-- jekyll-geo-pattern

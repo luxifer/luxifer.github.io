@@ -2,9 +2,8 @@
 layout: default
 article: true
 ---
-{% capture header_image %}{% if page.meta.thumb %}url(/images/{{ page.meta.thumb }}){% else %}{% uri_geo_pattern text=page.title %}{% endif %}{% endcapture %}
 {% capture header_class %}{% if page.meta.thumb %}has-cover{% endif %}{% endcapture %}
-<header class="{{ header_class }} {% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: {{ header_image }}; height: 100%;">
+<header class="{{ header_class }} {% if page.dark %}dark{% else %}clean{% endif %}" style="{% if page.meta.thumb %}background-image:url(/images/{{ page.meta.thumb }});{% endif %}height:100%;">
   {% if page.video %}
     <video id="bg-video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
     {% for format in page.video %}
@@ -57,7 +56,7 @@ article: true
 </div>
 {% if page.next %}
   {% capture footer_style %}{% if page.next.dark %}dark{% else %}clean{% endif %}{% endcapture %}
-  {% capture footer_image %}{% if page.next.meta.thumb %}url(/images/{{ page.next.meta.thumb }}){% else %}{% uri_geo_pattern text=page.next.title %}{% endif %}{% endcapture %}
+  {% capture footer_image %}{% if page.next.meta.thumb %}background-image:url(/images/{{ page.next.meta.thumb }});{% endif %}{% endcapture %}
   {% capture footer_message %}Read next{% endcapture %}
   {% capture footer_url %}{{ page.next.url }}{% endcapture %}
   {% capture footer_title %}{{ page.next.title }}{% endcapture %}
@@ -65,14 +64,14 @@ article: true
 {% else %}
   {% for post in site.related_posts limit:1 %}
     {% capture footer_style %}{% if post.dark %}dark{% else %}clean{% endif %}{% endcapture %}
-    {% capture footer_image %}{% if post.meta.thumb %}url(/images/{{ post.meta.thumb }}){% else %}{% uri_geo_pattern text=post.title %}{% endif %}{% endcapture %}
+    {% capture footer_image %}{% if post.meta.thumb %}background-image:url(/images/{{ post.meta.thumb }});{% endif %}{% endcapture %}
     {% capture footer_message %}Featured post{% endcapture %}
     {% capture footer_url %}{{ post.url }}{% endcapture %}
     {% capture footer_title %}{{ post.title }}{% endcapture %}
     {% capture footer_class %}{% if post.meta.thumb %}has-cover{% endif %}{% endcapture %}
   {% endfor %}
 {% endif %}
-<footer id="footer-cover" class="{{ footer_class }} {{ footer_style }}" style="background-image: {{ footer_image }}; height: 75%; min-height: 500px;">
+<footer id="footer-cover" class="{{ footer_class }} {{ footer_style }}" style="{{ footer_image }} height: 75%; min-height: 500px;">
   <div id="nav-icon" style="top: 60px;">
     <a class="scroll" href="#article"><span class="genericon genericon-collapse"></span></a>
   </div>
@@ -84,3 +83,11 @@ article: true
   </div>
   <p class="copyright">&copy; {{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
 </footer>
+<script>
+  {% if page.meta.thumb == false %}
+    $('header').geopattern('{{ page.title }}');
+  {% endif %}
+  {% if footer_class != "has-cover" %}
+    $('footer').geopattern('{{ footer_title }}');
+  {% endif %}
+</script>
