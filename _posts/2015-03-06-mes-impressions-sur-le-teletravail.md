@@ -39,6 +39,6 @@ D'une manière générale, ce mode de fonctionnement me va plutôt bien. Certes 
 
 J'arrive globalement à rester concentrer 6 heures dans la journée, je peux me prendre une petite pause quand bon me semble pour boire un café, ou simplement me dégourdir les jambes. Le midi je mange chez moi. Ce qui me permet d'économiser par mois un abonnement aux transports en communs, des pleins d'essence et des dépenses inutiles pour m'acheter un sandwich ou me payer un resto à l'extérieur.
 
-Pour conclure, ce mode de travail me correspond parfaitement et s'il le fallait je pourrai intégrer d'autres personnes en télétravail au sein de l'équipe Xotelia. Dans un futur plus ou moins proche je serai peut être de nouveau amené à travailler dans des bureaux, mais ce n'est pas au programme pour l'instant. Pour ceux qui ça intéresse, il existe un site d'offres d'emploi uniquement consacré au télétravail [We Work Remotely](https://weworkremotely.com/).
+Pour conclure, ce mode de travail me correspond parfaitement et s'il le fallait je pourrai intégrer d'autres personnes en télétravail au sein de l'équipe Xotelia. Dans un futur plus ou moins proche je serai peut être de nouveau amené à travailler dans des bureaux, mais ce n'est pas au programme pour l'instant. Pour ceux que ça intéresse, il existe un site d'offres d'emploi uniquement consacré au télétravail [We Work Remotely](https://weworkremotely.com/).
 
 Happy remote work!
