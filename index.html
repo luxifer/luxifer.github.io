@@ -3,8 +3,7 @@ layout: default
 title: Home
 ---
 
-{% capture pattern %}{% uri_geo_pattern text=site.title %}{% endcapture %}
-<header class="clean" style="background-image: {{ pattern }}; height: 350px;">
+<header class="clean" style="height: 350px;">
   {% include top.html %}
   <a href="{{ site.url }}">
     <div id="home-title" class="site-icon-home" style="background-image: url({{ site.icon }});"></div>
@@ -38,3 +37,6 @@ title: Home
 <footer class="clean" style="background-image: {{ pattern }}; background-position: bottom; height: 60px;">
   <p class="copyright">&copy; 2009 - {{ site.time | date: "%Y" }}, <a href="{{ site.copyright.url }}" target="_blank">{{ site.copyright.author }}</a>. <a href="{{ site.copyright.type_url }}" target="_blank">{{ site.copyright.type_title }}</a>.</p>
 </footer>
+<script>
+  $('header').geopattern('{{ site.title }}');
+</script>
