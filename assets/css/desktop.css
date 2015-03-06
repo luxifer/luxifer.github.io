@@ -30,6 +30,10 @@ header, footer {
 	margin-left: -350px;
 }
 
+#author {
+	padding-top: 0;
+}
+
 #bg-video {
 	position: absolute;
 	bottom: 0px;
