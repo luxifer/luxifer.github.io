@@ -13,6 +13,9 @@
     <meta name="twitter:creator" content="@florent_viel">
     <meta name="twitter:image:src" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
     <meta name="twitter:domain" content="{{ site.domain }}">
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
+    <meta itemprop="description" content="{% if page.type == "post" %}{{ page.content | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
+    <meta itemprop="image" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True" />

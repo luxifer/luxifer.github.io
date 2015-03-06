@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/{% if page.type == "post" %}Article{% else %}Blog{% endif %}">
   {% include head.html %}
   <body>
     {{ content }}
