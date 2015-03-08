@@ -34,7 +34,7 @@ copyright:
   author:   Florent Viel
   url:      http://florentviel.com
   type_title:   Tous droits réservés
-  type_url: http://creativecommons.org/licenses/by-nc/2.5
+  type_url: http://creativecommons.org/licenses/by-nc/4.0/
 
 gems:
   - jekyll-sitemap
