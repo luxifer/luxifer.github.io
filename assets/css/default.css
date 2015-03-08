@@ -248,11 +248,11 @@ blockquote, pre, .message {
 	margin-top: inherit;
 	color: #7a7a7a;
 	background-color: #fafafa;
-	font-style: italic;
 }
 
 blockquote {
 	border-left: 10px solid #C7F66A;
+	font-style: italic;
 }
 
 blockquote p {
