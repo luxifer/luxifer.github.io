@@ -196,6 +196,11 @@ img {
 	border-bottom: 0px;
 }
 
+#article img {
+	margin: auto;
+	display: block;
+}
+
 a.site-title:hover, .copyright a:hover {
 	text-decoration: underline;
 }

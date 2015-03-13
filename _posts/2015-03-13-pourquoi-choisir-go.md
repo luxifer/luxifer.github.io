@@ -12,6 +12,8 @@ meta:
 ---
 Je suis un grand fan du langage ge programmation Go. Dans cet article je vais essayer d'expliquer pourquoi c'est un bon choix en entreprise, quels sont ses avantages.
 
+![Golang mascot](https://blog.golang.org/gopher/header.jpg)
+
 ## Introduction
 
 Petite remise dans le contexte. Go (Golang) est un langage de programmation compilé, développé par Google qui à maintenant 5 ans. C'est un langage qui se veut simple dans sa conception et son utilisation. Pour ceux qui ne connaissent pas, je conseille d'aller jeter un oeil à [Un tour de Go](http://go-tour-fr.appspot.com/welcome/1). C'est un didacticiel en ligne qui permet de faire le tour du langage et de découvrir ses fonctionnalités.
@@ -78,6 +80,8 @@ Un autre avantage de Go est que celui-ci est compilé en un binaire statique. Ai
 ## Inconvénients
 
 Comment ça des inconvénients ?
+
+![Troll face](/images/trollface.png)
 
 ## Preuve par l'exemple
 
