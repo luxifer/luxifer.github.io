@@ -533,3 +533,7 @@ pre code {
 .text-muted {
 	color: #777;
 }
+
+.share-button {
+	display: inline-block;
+}
