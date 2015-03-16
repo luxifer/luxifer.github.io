@@ -10,7 +10,7 @@ published: true
 meta:
   thumb: false
 ---
-Je suis un grand fan du langage ge programmation Go. Dans cet article je vais essayer d'expliquer pourquoi c'est un bon choix en entreprise, quels sont ses avantages.
+Je suis un grand fan du langage de programmation Go. Dans cet article je vais essayer d'expliquer pourquoi c'est un bon choix en entreprise, quels sont ses avantages.
 
 ![Golang mascot](https://blog.golang.org/gopher/header.jpg)
 
