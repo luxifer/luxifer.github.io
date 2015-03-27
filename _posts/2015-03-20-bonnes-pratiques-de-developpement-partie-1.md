@@ -12,6 +12,8 @@ published: true
 meta:
   thumb: false
 ---
+Parties : [1][[2](/2015/03/27/bonnes-pratiques-de-developpement-partie-2/)]
+
 Voilà bien un sujet pour lequel j'ai pu discuter pendant des heures cumulées autour de la machine à café. Ce sujet sera traité en plusieurs articles, pour qu'il soit plus digeste à lire. Je mettrai à jour au cours de l'écritures les références vers les différentes parties.
 
 ## Disclaimer
