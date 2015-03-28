@@ -22,13 +22,13 @@ Tout ce que je vais écrire dans cette série d'article reflète uniquement ma p
 
 ## Gestion des dépendances
 
-Le plus important dans un projet, et surtout en équipe c'est la gestion des dépendances, non seulement applicative, mais aussi logicielle, et même matérielle (au moins virtuelle) quand c'est possible.
+Le plus important dans un projet, et surtout en équipe, c'est la gestion des dépendances, non seulement applicative, mais aussi logicielle, et même matérielle (au moins virtuelle) quand c'est possible.
 
-Les dépendances applicatives c'est quoi ? Ceci sont les _vendors_ de son application. Typiquement définie dane ton `composer.json`, `Gemfile`, `requirements.txt`, etc. Pour garder la même version de ces dépendances sur tous les postes de tous les développeurs est assez simple. A peu près chaque système de gestion de dépendance stocke dans le répertoire du projet un fichier dans lequel il indique toutes les versions de tous les _vendors_ installés. Avec _composer_ c'est le fichier `composer.lock`. Très important de le versionner, ainsi les vendors seront les même en dev, _CI_, stagging, prod, etc.
+Les dépendances applicatives c'est quoi ? Ceci sont les _vendors_ de son application. Typiquement définie dans ton `composer.json`, `Gemfile`, `requirements.txt`, etc. Garder la même version de ces dépendances sur tous les postes de tous les développeurs est assez simple. A peu près chaque système de gestion de dépendance stocke dans le répertoire du projet un fichier dans lequel il indique toutes les versions de tous les _vendors_ installés. Avec _composer_ c'est le fichier `composer.lock`. Très important de le versionner, ainsi les vendors seront les même en dev, _CI_, stagging, prod, etc.
 
 Les dépendances logicielles c'est quoi ? Ceci sont les logiciels nécessaires pour faire tourner son application. Pour une application _Symfony_ il s'agit d'un Nginx, de PHP et sûrement de MySQL. Alors en équipe ou même tout seul, je déconseille fortement d'installer manuellement ces dépendances. Car on va se retrouver avec une version de nginx en local, une autre en CI et encore une autre en prod. C'est le meilleur moyen de laisser passer des erreurs pour les voir seulement en prod, trop tard... Ce que je conseille plutôt c'est d'utiliser [vagrant](https://www.vagrantup.com/) ou encore mieux [docker](https://www.docker.com/).
 
-Vagrant par exemple, permet de créer une machine virtuelle, de dire comment la provisionner, c'est à dire qu'est-ce qu'il faut installer dessus et ensuite on peut partager cette machine virtuelle entre tous les collaborateurs du projet. Comme ça tout le monde à la même version des mêmes logiciels d'installés.
+Vagrant par exemple, permet de créer une machine virtuelle, de dire comment la provisionner, c'est à dire qu'est-ce qu'il faut installer dessus, et ensuite de pouvoir partager cette machine virtuelle entre tous les collaborateurs du projet. Comme ça tout le monde à la même version des mêmes logiciels d'installés.
 
 Ensuite Docker. Ça peut être un meilleur choix si tout le monde est sous linux. Car en plus de pouvoir utiliser les mêmes images en dev, ces images pourront servir en _CI_ et pourquoi pas en prod. Je dis sous linux seulement car actuellement, sous mac ou windows, la seule façon d'utiliser docker est de passer par [boot2docker](http://boot2docker.io/) et il y a certains problèmes au niveau du partage de fichiers entre l'hôte et la machine virtuelle qui contient docker, voir [ici](https://github.com/boot2docker/boot2docker/issues/581).
 
@@ -52,7 +52,7 @@ Je recommande de lire [cet article](http://everzet.com/post/107204911916/economy
 
 ## Code review
 
-Quand on travaille en équipe on ne peut pas se permettre de _pusher_ directement sur le master les yeux fermés. On risque d'introduire des bugs, d'avoir oublier des choses, il va être difficile de revenir en arrière, etc. Il vaut mieux dans ce cas utiliser le système de _Pull Request_ de GitHub, ou les _Merge Request_ de Bitbucket. Voire pourquoi pas se coupler à un vrai système de code review comme [gerrit](https://code.google.com/p/gerrit/), pas très sexy mais très puissant.
+Quand on travaille en équipe on ne peut pas se permettre de _pusher_ directement sur le master les yeux fermés. On risque d'introduire des bugs, d'avoir oublié des choses, il va être difficile de revenir en arrière, etc. Il vaut mieux dans ce cas utiliser le système de _Pull Request_ de GitHub, ou les _Merge Request_ de Bitbucket. Voire pourquoi pas se coupler à un vrai système de code review comme [gerrit](https://code.google.com/p/gerrit/), pas très sexy mais très puissant.
 
 Il est très important de faire relire son code par au moins une autre personne. Ça permet de détecter les oublis de `;`, un développement manquant, une autre façon de faire les choses, etc. Couplé à un système de branche, on se retrouve avec un historique clair, on peut savoir quelles features ont été _mergées_ a quel moment et on peut facilement revenir en arrière si besoin.
 
