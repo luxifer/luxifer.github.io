@@ -4,11 +4,11 @@ permalink: pretty
 exclude: ['Gemfile', 'Gemfile.lock']
 markdown: redcarpet
 highlighter: pygments
-gems: [jekyll-geo-pattern]
 
 # configuration required for some pages
 
 domain: blog.luxifer.fr
+url: blog.luxifer.fr
 title: Blog de Florent Viel
 author: Florent Viel
 description: Blog centré sur le développement php et symfony2
@@ -28,7 +28,9 @@ disqus:
 
 author:
   name: Florent Viel
+  email: florent.viel69@gmail.com
   url: https://plus.google.com/+FlorentViel
+  uri: https://plus.google.com/+FlorentViel
 
 copyright:
   author:   Florent Viel
@@ -39,3 +41,7 @@ copyright:
 gems:
   - jekyll-sitemap
   - jekyll-mentions
+  - jekyll-feed
+
+feed:
+  path: atom.xml
