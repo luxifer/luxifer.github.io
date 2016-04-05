@@ -31,7 +31,7 @@ Une fois votre compte créé, vous recevez un mail avec votre clé API et vos in
 
 On va d'abord commencer par la configuration, donc ouvrez le fichier `akismet.yml.example` dans le sous-répertoire `config/` du plugin et enregistrez le en `akismet.yml`.
 
-{% highlight yaml %}
+```yaml
 akismet:
   user_agent:
     application:
@@ -46,21 +46,21 @@ akismet:
     localhost: #host utilisé pour le dev
       host: www.example.com
       key: ############
-{% endhighlight %}
+```
 
 Maintenant le plugin configuré, il faut activé le plugin dans le fichier `config/projectConfiguration.class.php`.
 
-{% highlight php %}
+```php
 <?php
 
 $this->enablePlugins('drAkismetPlugin');
-{% endhighlight %}
+```
 
 Maintenant que le plugin est activé et disponible, il faut se poser la question de comment on va l'intégrer à notre application. Pour ça il y a plusieurs possibilité, la plus simple c'est d'utiliser le `sfValidator` fourni avec le plugin. Il y a d'autres possibilité, mais je vais décrire l'intégration avec le validateur. Nous verrons les autres pour signaler à Akismet un Spam ou un Ham dans l'administration.
 
 Donc pour utiliser le validateur, rien de plus simple, il s'utilise comme un validateur symfony classique. Ouvrez le `form` de votre projet et allez dans la méthode `configure()`.
 
-{% highlight php %}
+```php
 <?php
 
 $this->validatorSchema['text'] = new sfValidatorAnd(array( //text est le contenu du commentaire, adaptez à votre modèle
@@ -74,33 +74,33 @@ $this->validatorSchema['text'] = new sfValidatorAnd(array( //text est le contenu
     'comment_content' => $this->getValue('text')
   ))
 ));
-{% endhighlight %}
+```
 
 Et voilà, maintenant dès que vous posterez un commentaire, si Akismet le déclare comme spam, le formulaire ne sera pas valide et le commentaire ne sera pas sauvegardé.
 
 Maintenant on peut se dire qu'on a besoin de faire un peu plus que ne pas sauvegarder le commentaire. C'est possible, on peut écouter la requête avant qu'elle soit envoyée à Akismet et récupérer la réponse avant qu'elle ne soit traitée par le validateur. Pour ça j'ai du faire une petite modification du plugin pour qu'il récupère le dispatcher d'événement de l'application au lieux d'en créer un nouveau. Ouvrez le fichier `lib/api/connection/drAkismetApiSocketConnection.class.php` et remplacez le contenu du constructeur pa ça :
 
-{% highlight php %}
+```php
 <?php
 $this->_dispatcher = sfContext::getInstance()->getEventDispatcher();
-{% endhighlight %}
+```
 
 Donc maintenant le dispatcher est connecté à symfony, il faut ensuite récupérer l'événement pour indiquer quelle méthode va l'écouter :
 
-{% highlight php %}
+```php
 <?php
 $this->dispatcher->connect('akismet.pre_request', array('listenToPreRequest'));
 $this->dispatcher->connect('akismet.raw_response', array('listenToRawResponse'));
-{% endhighlight %}
+```
 
 Maintenant qu'on écoute les événements et qu'on a défini les méthodes qui vont les traiter voici quelques méthodes utiles pour `parser` la réponser qu renvoit le serveur.
 
-{% highlight php %}
+```php
 <?php
 public static function listenToRawResponse(sfEvent $event)
 {
   $rawResponse = new drAkismetApiResponse($event['response']);
 }
-{% endhighlight %}
+```
 
 Voilà voilà, à votre tour d'intégrer Akismet à votre projet Symfony. Si vous avez des retours, n'hésitez pas à utiliser les commentaires.

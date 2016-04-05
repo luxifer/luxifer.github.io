@@ -26,13 +26,13 @@ Je vous ai cité précédemment les principales fonctionnalités du langage. Ce 
 
 Je vais rentrer un peu plus dans le détail sur les _channels_ et les _goroutines_. Une _goroutine_ est un genre de _thread_ simplifié qui permet d'écrire du code asynchrone très rapidement. le simple fait de placer le mot-clé `go` devant un appel de fonction ou une fonction anonyme crée une _goroutine_.
 
-{% highlight go %}
+```go
 go list.Sort()  // run list.Sort concurrently; don't wait for it.
-{% endhighlight %}
+```
 
 Alors tout ça c'est bien gentil, mais comment on récupère le traitement d'une _goroutine_ ? Comment sait-on que son exécution est terminée ? C'est là qu'entre en jeu les _channels_. Un _channel_ permet de communiquer avec des _goroutines_.
 
-{% highlight go %}
+```go
 c := make(chan int)  // Allocate a _channel.
 // Start the sort in a goroutine; when it completes, signal on the _channel.
 go func() {
@@ -41,7 +41,7 @@ go func() {
 }()
 doSomethingForAWhile()
 <-c   // Wait for sort to finish; discard sent value.
-{% endhighlight %}
+```
 
 Dans cet exemple, on crée un _channel_ d'`int`, on crée une _goroutine_ dans laquelle on va procéder au tri de notre `list`, à la fin de ce tri on informe le _channel_ que le tri est terminé en envoyant un signal, dans cet exemple, la valeur du signal n'a pas d'importance. Pendant ce temps on a appelé la fonction `doSomethingForAWhile` qui va réaliser un traitement assez long. et la dernière ligne indique qu'on attend de recevoir le signal pour passer à la suite. De cette façon on est prévenu de la fin de l'exécution de notre _goroutine_.
 
@@ -55,7 +55,7 @@ L'autre avantage est que pratiquement tout est intégré dans la bibliothèque d
 
 On en vient donc à la gestion de dépendances. Avec Go, pas de `composer.json`, pas de `Gemfile`, pas de `requirements.txt`. Les dépendances dont on a besoin se déclarent dans le fichier qui les utilise, et le compilateur râle s'il y a des dépendances qui ne sont pas utilisés.
 
-{% highlight go %}
+```go
 package main
 
 import "fmt"
@@ -63,13 +63,13 @@ import "fmt"
 func main() {
     fmt.Println("Hello, world!")
 }
-{% endhighlight %}
+```
 
 Alors vous allez dire, comment on spécifie la version d'une dépendance pour être sûr que notre programme sera compilé avec les mêmes _vendors_ sur notre machine, sur notre CI et sur notre _prod_ ? Il existe plusieurs solutions pour ça comme [gopkg.in](http://labix.org/gopkg.in) qui sert d'alias dans les imports en spécifiant une version :
 
-{% highlight go %}
+```go
 import "gopkg.in/yaml.v1"
-{% endhighlight %}
+```
 
 Il existe aussi [godep](https://github.com/tools/godep) qui permet de sauvegarder son workspace local de dépendances, qui sera à ajouter dans sons _VCS_.
 

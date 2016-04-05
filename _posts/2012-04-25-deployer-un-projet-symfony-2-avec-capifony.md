@@ -25,23 +25,23 @@ Aujourd'hui j'ai voulu tester [capifony](http://capifony.org/). C'est un petit p
 
 Tout d'abord il faut installer la gem capifony :
 
-{% highlight bash %}
+```bash
 gem install capifony
-{% endhighlight %}
+```
 
 Ensuite il faut se rendre dans le répertoire de son projet pour initialiser capifony.
 
-{% highlight bash %}
+```bash
 export PATH=$PATH:~/.gem/ruby/version/bin
 cd /path/of/project
 capifony .
-{% endhighlight %}
+```
 
 Cette commande va créer un fichier `Capfile` à la racine de votre projet et un fichier `deploy.rb` dans le dossier `app/config/`, ou dans le dossier `config/` pour un projet symfony 1.4.
 
 Ensuite il faut configurer le fichier deploy.rb afin de spécifier tous les paramètres nécessaires au déploiement.
 
-{% highlight ruby %}
+```ruby
 set :domain, "" # adresse du serveur de production
 set :deploy_to, "" # répertoire ou déployer
 set :app_path, "app"
@@ -61,48 +61,48 @@ role :db, domain, :primary => true # This is where Rails migrations will run
 set :use_sudo, false
 set :use_composer, false
 set :keep_releases, 3
-{% endhighlight %}
+```
 
 Il est possible de définit une option en plus si l'utilisateur sur le serveur de production est différent de celui de la machine locale :
 
-{% highlight ruby %}
+```ruby
 set :user, "" # utilisateur distant
-{% endhighlight %}
+```
 
 Pour un projet Symfony 2 il peut être utile d'ajouter ces options la, pour partager le dossier `vendors/` et `logs/`  entre toutes les releases et le fichier `parameters.ini`.
 
-{% highlight ruby %}
+```ruby
 set :shared_files,      ["app/config/parameters.ini"]
 set :shared_children,     [app_path + "/logs", web_path + "/uploads", "vendor"]
 set :update_vendors, true
-{% endhighlight %}
+```
 
 Si votre projet utilise Composer comme gestionnaire de dépendances il faut aussi rajouter cette option :
 
-{% highlight ruby %}
+```ruby
 set :use_composer, true
-{% endhighlight %}
+```
 
 Une fois ce fichier modifié, il faut initialiser la structure des dossiers sur le serveur de production en tapant cette commande :
 
-{% highlight bash %}
+```bash
 cap deploy:setup
-{% endhighlight %}
+```
 
 Il faut maintenant configurer sur le serveur de production le fichier `parameters.ini` :
 
-{% highlight bash %}
+```bash
 ssh production_server
 cd /path/to/project/shared
 mkdir -p app/config
 vim app/config/parameters.ini
-{% endhighlight %}
+```
 
 Et une fois toutes ces étapes finies avec succès, il suffit juste de lancer la commande :
 
-{% highlight bash %}
+```bash
 cap deploy
-{% endhighlight %}
+```
 
 Cette commande va créer un nouveau dossier dans `/path/to/project/releases` et faire pointer le dossier `current/` vers cette dernière release. Ensuite installer les vendors si c'est un projet Symfony 2, publier les assets, vider le cache et lancer tous les hooks lié au scm.
 

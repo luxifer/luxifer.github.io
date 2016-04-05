@@ -27,7 +27,7 @@ Symfony permet de créer différents environnements, typiquement `dev` et `prod`
 
 &Agrave; la création d'un projet Symfony 2, l'environnement de test est déjà créé, il nous reste à le customiser.
 
-{% highlight yaml %}
+```yaml
 # app/config_test.yml
 
 doctrine:
@@ -35,22 +35,22 @@ doctrine:
         driver:     pdo_sqlite
         path:       %kernel.root_dir%/var/test.db
         user:       root
-{% endhighlight %}
+```
 
 On va donc dire à symfony qu'on veut utiliser sqlite comme base de donnée car les jeux de données sont petit et qu'on a pas besoin de performance. J'ai choisi de stocker la base dans un fichier, mais il est très bien possible de la stocker en mémoire en remplaçant l'option `path` par `memory: true`.
 
 Ensuite pour exécuter sa suite de tests, il faut un `bootstrap` pour initialiser une requête d'un test fonctionnel. La le problème c'est que le `bootstrap.php.cache` de symfony de base va seulement faire un autoload des vendors et initialiser le kernel. Avec un environnement de test il faut monter une base donnée, créer les tables et charger les fixtures. Il est possible de dire à phpunit d'utiliser un fichier de bootstrap spécifique qui va faire les choses à notre place.
 
-{% highlight xml %}
+```xml
 <!-- app/phpunit.xml.dist -->
 
 <phpunit
     bootstrap = "tests.bootstrap.php" >
-{% endhighlight %}
+```
 
 Dans ce fichier on indique à phpunit d'utiliser un fichier spécifique pour exécuter nos tâches de bootstrap.
 
-{% highlight php %}
+```php
 <?php
 // app/tests.bootstrap.php
 
@@ -72,19 +72,19 @@ if (isset($_ENV['BOOTSTRAP_DB_ENV'])) {
 }
 
 require __DIR__.'/bootstrap.php.cache';
-{% endhighlight %}
+```
 
 Dans ce fichier on liste les tâches à exécuter si la variable d'environement `BOOTSTRAP_DB_ENV` est définie. Là on indique qu'on veut supprimer la base de test existante, créer le schéma et charger les fixtures.
 
 Ensuite pour définir cette variable d'environnement, il faut rajouter ceci dans son fichier `phpunit.xml.dist`
 
-{% highlight xml %}
+```xml
 <!-- app/phpunit.xml.dist -->
 
 <php>
     <env name="BOOTSTRAP_DB_ENV" value="test"/>
 </php>
-{% endhighlight %}
+```
 
 Cette modification va permettre de créer une fase de donnée et de charger les fixtures, nécessaires à l'exécution de la suite de tests.
 
@@ -92,7 +92,7 @@ Désormais, lors de l'exécution de `bin/vendor/phpunit` la base do donnée de t
 
 Ensuite il faut dire à Jenkins de récupérér composer et d'installer les vendors avant de lancer phpunit.
 
-{% highlight xml %}
+```xml
 <!-- build.xml -->
 
 <target name="composer" depends="clean" description="Download composer and install project dependancies">
@@ -123,7 +123,7 @@ Ensuite il faut dire à Jenkins de récupérér composer et d'installer les vend
         <arg path="${basedir}/app" />
     </exec>
 </target>
-{% endhighlight %}
+```
 
 Le paramètre `github-oauth.github.com` sert a passer sa clé oauth à composer pour éviter les problèmes de _fair-use_ avec l'api github.
 

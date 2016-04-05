@@ -2,8 +2,11 @@
 
 permalink: pretty
 exclude: ['Gemfile', 'Gemfile.lock']
-markdown: redcarpet
-highlighter: pygments
+markdown:    kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
 
 # configuration required for some pages
 
@@ -42,6 +45,7 @@ gems:
   - jekyll-sitemap
   - jekyll-mentions
   - jekyll-feed
+  - jekyll-paginate
 
 feed:
   path: atom.xml

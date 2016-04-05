@@ -19,26 +19,26 @@ En python avec le framework django ou en ruby avec rails on dispose d'un shell i
 
 Le projet est disponible [ici](https://github.com/luxifer/symfony-repl). L'installastion est simple :
 
-{% highlight bash %}
+```bash
 composer require-dev luxifer/symfony-repl
-{% endhighlight %}
+```
 
 Ou en le rajoutant à la main dans son `composer.json` et en lançant un `composer update` :
 
-{% highlight json %}
+```json
 {
     "require-dev": {
         "luxifer/symfony-repl": "dev-master"
     }
 }
-{% endhighlight %}
+```
 
 Ensuite à la racine de son projet Symfony, il suffit de lancer `bin/symfony-repl` et le shell se lance.
 
-{% highlight bash %}
+```bash
 Psy Shell v0.1.8 (PHP 5.5.11 — cli) by Justin Hileman
 >>>
-{% endhighlight %}
+```
 
 Depuis ce shell on a la variable `$kernel` qui est exposée et qui est le kernel Symfony. Depuis ce shell on peut lancer `$kernel->getContainer()` pour accéder au conteneur de service symfony et donc ainsi accéder à tous les services définis. Tout le code qu'on a écrit dans le dossier `src/` est disponible et on peut donc facilement instancier un modèle comme `Acme\UserBundle\Entity\User`.
 
