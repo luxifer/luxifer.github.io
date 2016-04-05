@@ -72,7 +72,7 @@ config := container.Config{
 }
 ```
 
-Mais voilà, en rajoutant cette configuration, quand on récuère les logs, docker ne va pas multiplexer les sorties `stdin` et `stdout` mais va renvoyer la sortie brut du pseudo terminal. Donc il ne faut plus utiliser `stdcopy.StdCopy`.
+Mais voilà, en rajoutant cette configuration, quand on récuère les logs, docker ne va pas multiplexer les sorties `stdout` et `stderr` mais va renvoyer la sortie brut du pseudo terminal. Donc il ne faut plus utiliser `stdcopy.StdCopy`.
 
 Comme je l'ai dit plus haut, je voulais avoir une page pour suivre le déploiement et afficher le flux des logs. J'avais deux possibilités pour ça, soit utiliser les [Websocket](https://developer.mozilla.org/fr/docs/WebSockets) ou [Server-sent event](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events). Le premier est en full duplexe, c'est à dire que le serveur et le client peuvent écrire dedans. Le deuxième est dans un sens seulement, le serveur envoi des messages au client. Je suis parti sur Server-sent event, car je n'ai pas besoin que le client (la page web) envoi de message au serveur.
 
