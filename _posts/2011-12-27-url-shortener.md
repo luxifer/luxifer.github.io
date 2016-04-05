@@ -34,14 +34,14 @@ Voulant me remettre petit à petit dans le framework django de python, je me sui
 Le code source du projet est sous licence GPL V3 et est disponible sur github : [https://github.com/LuXiFeR/UrliZr](https://github.com/LuXiFeR/UrliZr)
 
 J'ai commencé par simplement faire un générateur d'identifiant unique en python :
-{% highlight python %}
+```python
 import string
 from random import choice
 
 def genUid():
   chars = string.letters + string.digits
   return u''.join(choice(chars) for i in range(8))
-{% endhighlight %}
+```
 Cette fonction me permet de générer un ID unique pour chaque URL de 8 caractères de long, ce qui me permet de stocker un paquet d'adresses en base de données.
 
 J'ai ensuite fait une petite interface web un peu stylisée pour pouvoir générer les URL raccourcis.

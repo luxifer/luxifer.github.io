@@ -24,7 +24,7 @@ Je ne sais pas si vous le savez, mais sur iPhone, iPod et iPad il est impossible
 
 Enfin arrêtons de "troller" mais j'ai trouvé une solution pour pouvoir contourner le bridage de Apple. Il s'agit de [Picup](http://picupapp.com/index.html). Cette application va transformer les champs `<input type="file">` en lien `fileupload://` qui va ensuite faire appel a l'appli installée sur le périphérique. Pour intégrer cette appli a son site internet il suffit d'ajouter le fichier javascript téléchargeable [ici](https://castle.so/dl/5tt6l+s) sur la page contenant le formulaire. Et ensuite il suffit d'utiliser le helper pour générer l'url à passer a l'appli pour traiter le fichier.
 
-{% highlight javascript %}
+```javascript
 $(function() {
   Picup.convertFileInput('input',{
     'referername': escape('referer'),
@@ -36,17 +36,17 @@ $(function() {
     'referrerfavicon': escape('icone a afficher dans l application')
   });
 });
-{% endhighlight %}
+```
 
 Ne pas oublier de faire de la détection de navigateur ajant d'ajouter ce script, car sur le navigateur natif android l'upload marche. Sur la page indiquée en callback, il peut être utile de créer une fonction de callback avec le helper picup pour faire un traitement supplémentaire sur les fichiers uploadés avec l'application.
 
-{% highlight javascript %}
+```javascript
 Picup.callbackHandler = function(params){
   for(var key in params){
     alert(key+' == '+params[key]);
   }
 }
-{% endhighlight %}
+```
 Pour voir le résultat il y a une démo sur le site de l'application, avec un [scratchpad](http://picupapp.com/scratchpad.html) qui permet de modifier les paramètres de la requête afin de faire les tests directement sur son serveur.
 
 Voilà pour le côter javascript, il reste a écrire côter serveur la méthode qui va traiter la requête POST qui va être faite par picup et l'intégration est terminée. Le rendu est un bouton à la place du champ `<input type="file">` qui va ouvrir l'application et permettre à l'utilisateur de choisir une image parmis sa galerie.

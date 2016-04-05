@@ -21,7 +21,7 @@ Ce matin je faisais un peu de R&amp;D au bureau pour savoir comment récupérer 
 
 Bref, après plusieurs essais et modifications de mon côté, j'ai transformé cette classe en full objet, documentée et ajouter quelques conditions de gestion d'erreurs.
 
-{% highlight php %}
+```php
 <?php
 
 /**
@@ -284,11 +284,11 @@ class MailAttachmentManager
     return $header->from[0]->mailbox.'@'.$header->from[0]->host;
   }
 }
-{% endhighlight %}
+```
 
 Pour ce qui est de l'utilisation, voici une petite démo rapide d'utilisation pour parcourir sa boite mail et sauvegarder les messages dans un dossier défini :
 
-{% highlight php %}
+```php
 #!/usr/bin/env php
 <?php
 require_once("attachmentread.class.php");
@@ -297,7 +297,7 @@ $login=""; //imap login
 $password=""; //imap password
 $savedirpath="./" ; // attachement will save in same directory where scripts run othrwise give abs path
 $jk=new MailAttachmentManager($host, $login, $password, $savedirpath); // Creating instance of class####
-{% endhighlight %}
+```
 
 N'hésitez pas a commenter ou faire des suggestions par rapport au code. Prochaine étape trouver un moyen de sécuriser la boite mail qui va recevoir les pièces jointes pour les attacher à un utilisateur d'un site. Un peu comme Flickr qui permet d'ajouter des photos à son stream par mail.
 

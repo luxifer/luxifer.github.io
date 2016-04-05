@@ -2,7 +2,7 @@
 layout: post
 title: "Corriger le problème de GDM sur Archlinux après la màj 3.8"
 description: ""
-category: 
+category:
 tags:
 - system
 - linux
@@ -18,7 +18,7 @@ Après la dernière mise à jour majeur de gnome vers la version 3.8, gdm ne se 
 Le problème vient de la méthode d'accélération du pilote graphique intel. Par défaut c'est `UXA` qui est plus stable techniquement mais qui est plus lente que la méthode `SNA`.
 Il faut donc changer de méthode pour passer à `SNA` qui est plus rapide et nécessaire pour gnome.
 
-{% highlight bash %}
+```bash
 #/etc/X11/xorg.conf.d/20-intel.conf
 
 Section "Device"
@@ -26,6 +26,6 @@ Section "Device"
    Driver      "intel"
    Option      "AccelMethod"  "sna"
 EndSection
-{% endhighlight %}
+```
 
 Il suffit de redémarrer et le tour est joué.

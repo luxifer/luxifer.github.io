@@ -5,6 +5,9 @@ exclude: ['Gemfile', 'Gemfile.lock']
 markdown:    kramdown
 highlighter: rouge
 
+kramdown:
+  input: GFM
+
 # configuration required for some pages
 
 domain: blog.luxifer.fr
