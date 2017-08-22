@@ -88,7 +88,7 @@ Ensuite pour définir cette variable d'environnement, il faut rajouter ceci dans
 
 Cette modification va permettre de créer une fase de donnée et de charger les fixtures, nécessaires à l'exécution de la suite de tests.
 
-Désormais, lors de l'exécution de `bin/vendor/phpunit` la base do donnée de test sera supprimée, créée et les fixtures seront chargées avant d'exécuter les tests.
+Désormais, lors de l'exécution de `bin/vendor/phpunit` la base de données de test sera supprimée, créée et les fixtures seront chargées avant d'exécuter les tests.
 
 Ensuite il faut dire à Jenkins de récupérér composer et d'installer les vendors avant de lancer phpunit.
 
