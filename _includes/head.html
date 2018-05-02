@@ -5,17 +5,17 @@
     <meta name="description" content="{% if page.type == "post" %}{{ page.content | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}" />
+    <meta property="og:image" content="{% if page.meta.thumb %}https://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}https://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@florent_viel">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta name="twitter:description" content="{% if page.type == "post" %}{{ page.content | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="twitter:creator" content="@florent_viel">
-    <meta name="twitter:image:src" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
+    <meta name="twitter:image:src" content="{% if page.meta.thumb %}https://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}https://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
     <meta name="twitter:domain" content="{{ site.domain }}">
     <meta itemprop="name" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta itemprop="description" content="{% if page.type == "post" %}{{ page.content | strip_html | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}">
-    <meta itemprop="image" content="{% if page.meta.thumb %}http://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}http://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
+    <meta itemprop="image" content="{% if page.meta.thumb %}https://{{ site.domain }}/images/650x/{{ page.meta.thumb }}{% else %}https://www.gravatar.com/avatar/34df2fcf73fb6b987f3e2ea2bcf47802?s=200{% endif %}">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="True" />
@@ -30,7 +30,7 @@
     <link rel="shortcut icon" href="{{ site.url }}/assets/images/favicon.ico">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.url }}/atom.xml">
     {% feed_meta %}
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
     <script src="/assets/js/geopattern.min.js"></script>
 </head>
